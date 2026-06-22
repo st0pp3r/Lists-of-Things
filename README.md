@@ -1,1 +1,1 @@
-# Lists-of-Things
+# Lists-of-Things [![Update Lists](https://github.com/st0pp3r/Lists-of-Things/actions/workflows/update_lists.yml/badge.svg)](https://github.com/st0pp3r/Lists-of-Things/actions/workflows/update_lists.yml)
