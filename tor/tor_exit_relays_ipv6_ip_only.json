@@ -1,6 +1,6 @@
 {
   "name": "Tor Exit Relays IPv6 IP-Only",
-  "last_updated": "2026-09-29T11:11:25.400410",
+  "last_updated": "2026-09-30T10:59:14.449409",
   "original_project": "https://onionoo.torproject.org/details",
   "changes": "Fetched Onionoo relay feed and converted to standardized format.",
   "things": [
@@ -72,6 +72,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -465,8 +466,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -784,7 +783,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "tor59.quintex.com"
         ],
@@ -896,7 +895,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -1132,6 +1130,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -1455,7 +1454,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -1852,7 +1850,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -2017,6 +2014,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -2300,6 +2298,42 @@
           "tor33.quintex.com"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2620:7:6003::113"
+      }
+    },
+    {
+      "thing": [
+        "2001:19f0:8000:46c5:5400:6ff:fec4:3274"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (SamWrig9).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "SamWrig9",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:8000:46c5:5400:6ff:fec4:3274"
       }
     },
     {
@@ -2596,6 +2630,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -2672,6 +2707,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -2832,6 +2868,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -2872,7 +2909,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -3345,6 +3381,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -3420,6 +3457,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -3576,6 +3614,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -3734,7 +3773,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -4085,7 +4123,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -4203,7 +4240,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -4318,7 +4354,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -4437,10 +4472,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -4515,7 +4547,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -4557,7 +4588,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -4713,7 +4743,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -5312,9 +5341,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -5895,6 +5922,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -5933,7 +5961,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -6329,6 +6359,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -6448,7 +6479,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -6488,7 +6518,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -7039,6 +7068,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -7312,7 +7342,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -7445,43 +7474,6 @@
     },
     {
       "thing": [
-        "2a06:1700:1:43::efa:fee4"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (sartre1).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "sartre1",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Running",
-          "Stable",
-          "Valid"
-        ],
-        "country": "fi",
-        "country_name": "Finland",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a06:1700:1:43::efa:fee4"
-      }
-    },
-    {
-      "thing": [
         "2607:9d00:2000:a8::6bcd:ab9c"
       ],
       "type": "ip-only",
@@ -7585,6 +7577,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -8259,6 +8252,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -8618,7 +8612,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -10155,6 +10148,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -11650,6 +11644,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -13286,7 +13281,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -13485,6 +13479,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -13602,6 +13597,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -14464,7 +14460,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -15010,6 +15005,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -15091,6 +15087,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -15644,6 +15641,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -15888,6 +15886,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -16160,7 +16159,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -16322,6 +16320,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -17541,6 +17540,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -17624,6 +17624,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -17665,7 +17666,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -18022,7 +18022,7 @@
         ],
         "country": "md",
         "country_name": "Moldova, Republic of",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "angband.teaparty.net"
         ],
@@ -18176,6 +18176,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -18457,7 +18458,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -18690,7 +18690,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -18808,9 +18807,9 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -19010,8 +19009,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -19169,7 +19166,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -19363,7 +19359,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -19643,6 +19638,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -20272,7 +20268,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -20313,7 +20308,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -20628,7 +20622,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -21173,6 +21166,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -21255,7 +21249,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -21334,6 +21327,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -21498,7 +21492,7 @@
         ],
         "country": "sg",
         "country_name": "Singapore",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2407:3641:2259:8208::1"
       }
@@ -21610,6 +21604,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -21886,7 +21881,6 @@
           "Exit",
           "Fast",
           "Running",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -22556,7 +22550,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -22831,6 +22824,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -22908,10 +22902,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -23229,7 +23220,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -23946,8 +23936,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -24071,7 +24059,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -24434,6 +24421,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -24511,9 +24499,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -24793,7 +24779,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -24801,7 +24786,7 @@
         ],
         "country": "no",
         "country_name": "Norway",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a03:94e0:ffff:185:181:61:0:203"
       }
@@ -24911,7 +24896,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -25028,6 +25015,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -26260,6 +26248,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -26336,6 +26325,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -26381,7 +26371,7 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a05:f480:1400:321b:5400:6ff:fec2:f863"
       }
@@ -26412,7 +26402,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -26998,7 +26987,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -27080,7 +27068,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -27357,7 +27344,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -27395,7 +27384,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -27559,7 +27547,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -28005,6 +27992,42 @@
     },
     {
       "thing": [
+        "2001:19f0:6400:2e06:5400:6ff:fec3:d8a9"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (PeterCart0).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "PeterCart0",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:6400:2e06:5400:6ff:fec3:d8a9"
+      }
+    },
+    {
+      "thing": [
         "2620:7:6003::172"
       ],
       "type": "ip-only",
@@ -28270,8 +28293,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -28513,7 +28534,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -28915,7 +28935,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -29745,6 +29764,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -30105,7 +30125,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -30810,6 +30829,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -31515,6 +31535,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -31961,7 +31982,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -32155,7 +32178,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -32639,7 +32661,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -32718,7 +32739,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -33155,7 +33175,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -33195,7 +33214,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -33945,6 +33963,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -34262,7 +34281,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:5400:2d80:5400:6ff:fec2:5257"
       }
@@ -34613,6 +34632,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -34934,6 +34954,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -35013,7 +35034,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -35560,7 +35580,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a05:f480:1800:21aa:5400:6ff:fec2:f838"
       }
@@ -35756,7 +35776,7 @@
         ],
         "country": "au",
         "country_name": "Australia",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-au-04.finlay.wattle.id.au"
         ],
@@ -36028,6 +36048,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -36351,7 +36372,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -36549,7 +36569,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -36820,8 +36839,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -36980,6 +36997,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -37263,7 +37281,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -37976,7 +37993,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -38953,7 +38969,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -38991,6 +39010,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -39110,6 +39130,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -39150,6 +39171,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -39343,8 +39365,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -39540,6 +39560,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -39579,7 +39600,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -39779,9 +39799,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -40176,6 +40194,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -40334,6 +40353,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -41123,7 +41143,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -41203,7 +41225,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -41321,6 +41342,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -41638,7 +41660,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -42043,43 +42064,6 @@
     },
     {
       "thing": [
-        "2001:1af8:5301:140:1c00:e6ff:fe00:2759"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (TheBestServer).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "TheBestServer",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Running",
-          "Stable",
-          "Valid"
-        ],
-        "country": "nl",
-        "country_name": "Netherlands",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:1af8:5301:140:1c00:e6ff:fe00:2759"
-      }
-    },
-    {
-      "thing": [
         "2a0e:b107:dd0::3:fa35:9316"
       ],
       "type": "ip-only",
@@ -42145,7 +42129,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -42658,7 +42641,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -42740,6 +42722,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -42940,7 +42923,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -43061,7 +43043,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -43576,6 +43557,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -43658,7 +43640,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -43856,6 +43837,7 @@
         "nickname": "prideoflions",
         "flags": [
           "Exit",
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -43900,7 +43882,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:9003:f0d:5400:6ff:fec2:522b"
       }
@@ -44377,7 +44359,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -44844,6 +44825,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -44925,7 +44907,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -45040,7 +45021,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -45242,6 +45222,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -45989,7 +45970,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -46030,7 +46010,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -47612,7 +47591,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -47653,7 +47631,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -47771,6 +47752,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -47851,7 +47833,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -48011,7 +47992,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -48167,7 +48147,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -48479,6 +48458,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -48595,6 +48575,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -49043,7 +49024,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor44.quintex.com"
         ],
@@ -49118,6 +49099,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -49282,7 +49264,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -49554,7 +49535,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -49790,7 +49770,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -49886,6 +49865,42 @@
     },
     {
       "thing": [
+        "2602:fc2f:f00:400::a"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (eageloven).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "eageloven",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2602:fc2f:f00:400::a"
+      }
+    },
+    {
+      "thing": [
         "2620:7:6003::105"
       ],
       "type": "ip-only",
@@ -49911,7 +49926,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -50874,7 +50888,7 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit.sabotage.org"
         ],
@@ -51225,7 +51239,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -51929,6 +51942,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -52049,6 +52063,7 @@
           "HSDir",
           "Running",
           "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -52201,7 +52216,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -52561,10 +52579,7 @@
         "nickname": "ageis",
         "flags": [
           "Exit",
-          "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -52958,6 +52973,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -53013,6 +53029,42 @@
           "tor4.quintex.com"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2620:7:6003::115"
+      }
+    },
+    {
+      "thing": [
+        "2001:19f0:6400:2b4e:5400:6ff:fec4:7b8"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (tonybrown1986).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "tonybrown1986",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:6400:2b4e:5400:6ff:fec4:7b8"
       }
     },
     {
@@ -53200,6 +53252,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -53553,6 +53606,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -53632,7 +53686,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -53713,7 +53769,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -53752,6 +53807,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -54183,7 +54239,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -54501,6 +54556,42 @@
     },
     {
       "thing": [
+        "2607:f2d8:401b:122d::a"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (contribnodeus).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "contribnodeus",
+        "flags": [
+          "Exit",
+          "Fast",
+          "Running",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2607:f2d8:401b:122d::a"
+      }
+    },
+    {
+      "thing": [
         "2620:7:6003::121"
       ],
       "type": "ip-only",
@@ -54525,6 +54616,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -54606,8 +54698,6 @@
         "nickname": "binney",
         "flags": [
           "Exit",
-          "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -54686,7 +54776,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -54884,7 +54973,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -55440,7 +55528,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -55488,44 +55575,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:67c:e60:c0c:192:42:116:115"
-      }
-    },
-    {
-      "thing": [
-        "2a02:6f8:2020:206:b::192"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (europeantgah).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "europeantgah",
-        "flags": [
-          "Exit",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "se",
-        "country_name": "Sweden",
-        "running": true,
-        "verified_host_names": [
-          "c6a7cec0.vpn.njalla.net"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a02:6f8:2020:206:b::192"
       }
     },
     {
@@ -55789,7 +55838,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -55867,6 +55915,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -55908,7 +55957,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -56297,6 +56345,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -56769,7 +56818,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -57169,6 +57217,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -57560,6 +57609,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -58197,6 +58247,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -58629,6 +58680,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -58985,6 +59037,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -59983,7 +60036,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -60616,6 +60668,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -60736,7 +60789,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -60850,6 +60902,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -61006,7 +61059,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -61168,6 +61220,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -63020,6 +63073,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -63179,7 +63233,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -63490,6 +63543,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -63606,7 +63660,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -64007,6 +64060,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -64250,6 +64304,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -64532,7 +64587,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -64736,6 +64790,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -64824,46 +64879,6 @@
           "golosa.info"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2a01:7e00::f03c:91ff:fe78:b382"
-      }
-    },
-    {
-      "thing": [
-        "2400:8901::f03c:94ff:fe7f:59f6"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (JAEN).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "JAEN",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "sg",
-        "country_name": "Singapore",
-        "running": true,
-        "verified_host_names": [
-          "tor-exit.triggersolutions.au"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2400:8901::f03c:94ff:fe7f:59f6"
       }
     },
     {
@@ -65323,6 +65338,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -65439,16 +65455,16 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
-        "verified_host_names": [
-          "exit03.tor-exit.org"
-        ],
+        "running": false,
+        "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a14:7c2:1d0e::1"
       }
     },
@@ -65993,8 +66009,6 @@
         "nickname": "fellwock",
         "flags": [
           "Exit",
-          "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -66599,7 +66613,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -66993,6 +67006,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -67276,6 +67290,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -67473,6 +67488,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -67747,6 +67763,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -67906,6 +67923,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -68065,6 +68083,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -68231,6 +68250,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -68467,6 +68487,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -68819,7 +68840,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -69741,7 +69761,7 @@
         ],
         "country": "sg",
         "country_name": "Singapore",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2400:d320:2202:5765::1"
       }
@@ -70178,6 +70198,44 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2605:6400:30:f38b:28b3:cd24:51f3:e412"
+      }
+    },
+    {
+      "thing": [
+        "2602:f6f6:2:f2a8::1"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (pruvodci02).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "pruvodci02",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": [
+          "tor-exit-01.copperhopper.com"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2602:f6f6:2:f2a8::1"
       }
     },
     {
@@ -70834,6 +70892,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -70873,9 +70932,6 @@
         "nickname": "barlow",
         "flags": [
           "Exit",
-          "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -70954,6 +71010,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -71655,7 +71712,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -71695,6 +71751,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -71851,6 +71908,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -72380,6 +72438,42 @@
     },
     {
       "thing": [
+        "2001:19f0:6400:2b9b:5400:6ff:fec5:8398"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (oakbrook754).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "oakbrook754",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:6400:2b9b:5400:6ff:fec5:8398"
+      }
+    },
+    {
+      "thing": [
         "2620:7:6003::158"
       ],
       "type": "ip-only",
@@ -72798,6 +72892,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -72922,6 +73017,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -73203,7 +73299,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -74432,6 +74527,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "ro",
@@ -74588,7 +74684,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -74905,6 +75000,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -75024,8 +75120,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -75033,7 +75127,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2620:18c:0:192::e0:221"
       }
@@ -75386,7 +75480,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -75585,7 +75678,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -76023,7 +76115,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -76455,6 +76546,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -76496,6 +76588,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -79412,7 +79505,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -79491,6 +79583,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -79621,6 +79714,42 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2620:18c:0:192::e0:161"
+      }
+    },
+    {
+      "thing": [
+        "2001:19f0:9000:297c:5400:6ff:fec5:5f85"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (cloudriver865).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "cloudriver865",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:9000:297c:5400:6ff:fec5:5f85"
       }
     },
     {
@@ -79886,6 +80015,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -80431,6 +80561,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -80981,6 +81112,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -81096,7 +81228,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -81408,6 +81539,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -82311,6 +82443,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -82986,7 +83119,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -83375,6 +83507,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -83889,6 +84022,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -84010,6 +84144,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -84518,7 +84653,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -84558,6 +84692,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -85185,7 +85320,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -85263,6 +85397,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -85575,7 +85710,6 @@
           "Fast",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -85894,7 +86028,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -85936,7 +86069,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -85980,7 +86112,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:8000:4a2a:5400:6ff:fec2:526a"
       }
@@ -86217,7 +86349,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:7cc0:1:35e4:c905:69e:8f8f:635a"
       }
@@ -86457,6 +86589,42 @@
     },
     {
       "thing": [
+        "2a14:c380:1300:e8::a"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (murvisgay).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "murvisgay",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "ph",
+        "country_name": "Philippines",
+        "running": false,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a14:c380:1300:e8::a"
+      }
+    },
+    {
+      "thing": [
         "2607:9d00:2000:a8::6bcd:ab9c"
       ],
       "type": "ip-only",
@@ -86605,7 +86773,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "tor37.quintex.com"
         ],
@@ -87234,7 +87402,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -87632,6 +87799,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -87912,7 +88080,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -88306,8 +88473,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -88426,6 +88591,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -88871,6 +89037,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -89110,6 +89277,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -89588,6 +89756,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -89828,7 +89997,7 @@
         ],
         "country": "lu",
         "country_name": "Luxembourg",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "exit.alt.cx"
         ],
@@ -90974,6 +91143,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -91215,7 +91385,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -92220,9 +92389,6 @@
         "nickname": "dwork",
         "flags": [
           "Exit",
-          "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -92301,6 +92467,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -92383,7 +92550,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -92816,7 +92982,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -93130,7 +93295,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -93295,7 +93459,7 @@
         ],
         "country": "sg",
         "country_name": "Singapore",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2407:3641:2259:8208::1"
       }
@@ -93327,6 +93491,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -93835,7 +94000,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -94308,7 +94472,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -94543,6 +94709,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -94660,7 +94827,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -94977,7 +95143,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -95600,6 +95765,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -95681,7 +95847,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -95764,6 +95929,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -96317,6 +96483,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -96599,6 +96766,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -96830,8 +96998,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -97830,6 +97996,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -97989,7 +98156,6 @@
           "HSDir",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -98029,7 +98195,6 @@
           "Exit",
           "Fast",
           "Running",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -98187,6 +98352,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -98228,6 +98394,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -98623,6 +98790,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -98822,6 +98990,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -98866,6 +99035,7 @@
           "HSDir",
           "Running",
           "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -98984,6 +99154,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -99027,7 +99198,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -99655,6 +99825,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -99810,6 +99981,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -100319,6 +100491,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -100409,6 +100582,42 @@
           "berlin01.tor-exit.artikel10.org"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c2::15"
+      }
+    },
+    {
+      "thing": [
+        "2001:19f0:6001:11ad:5400:6ff:fec4:5dae"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (NinaFlor0).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "NinaFlor0",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:6001:11ad:5400:6ff:fec4:5dae"
       }
     },
     {
@@ -101038,7 +101247,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -101586,9 +101794,6 @@
         "nickname": "swartz",
         "flags": [
           "Exit",
-          "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -101782,7 +101987,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -101859,7 +102063,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -101899,7 +102102,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -101941,7 +102143,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -102849,6 +103050,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -103011,6 +103213,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -104270,7 +104473,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -104349,6 +104551,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -104394,7 +104597,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:6400:2188:5400:6ff:fec2:f83a"
       }
@@ -104671,7 +104874,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:ac01:f44:5400:6ff:fec1:8024"
       }
@@ -104781,7 +104984,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -105602,7 +105804,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -105610,7 +105811,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor15.quintex.com"
         ],
@@ -105840,7 +106041,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -105922,10 +106122,8 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": true,
-        "verified_host_names": [
-          "exit02.tor-exit.org"
-        ],
+        "running": false,
+        "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a14:c380:26:1f9::"
       }
     },
@@ -105956,6 +106154,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -106344,6 +106543,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -106424,7 +106624,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -106506,6 +106705,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -106623,7 +106823,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -107204,7 +107403,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -107246,6 +107444,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -107287,6 +107486,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -107765,6 +107965,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -107924,6 +108125,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -108636,6 +108838,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -108873,9 +109076,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -109156,6 +109357,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -109397,7 +109599,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -109553,7 +109754,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -109833,7 +110033,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -109874,9 +110073,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -109955,6 +110152,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -110312,7 +110510,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
