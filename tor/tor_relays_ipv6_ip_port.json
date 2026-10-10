@@ -1,6 +1,6 @@
 {
   "name": "Tor Relays IPv6 IP:Port",
-  "last_updated": "2026-10-09T11:42:33.916091",
+  "last_updated": "2026-10-10T11:00:59.058276",
   "original_project": "https://onionoo.torproject.org/details",
   "changes": "Fetched Onionoo relay feed and converted to standardized format.",
   "things": [
@@ -185,6 +185,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -731,6 +732,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -779,6 +781,46 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2600:2b00:93ee:eafe:be24:11ff:fedf:512e"
+      }
+    },
+    {
+      "thing": [
+        "[2a00:8a60:e012:a00::9001]:9001"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (FTPhalifaxRWTH).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "FTPhalifaxRWTH",
+        "flags": [
+          "Fast",
+          "Guard",
+          "Running",
+          "Stable",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "de",
+        "country_name": "Germany",
+        "running": true,
+        "verified_host_names": [
+          "not-ftp.halifax.rwth-aachen.de"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a00:8a60:e012:a00::9001"
       }
     },
     {
@@ -1201,6 +1243,7 @@
       "meta": {
         "nickname": "monoxide",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -1566,47 +1609,6 @@
           "tor51.quintex.com"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2620:7:6003::140"
-      }
-    },
-    {
-      "thing": [
-        "[2001:4dd0:32b1:32de::a04d:cc9f]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (unnerve0909).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "unnerve0909",
-        "flags": [
-          "Fast",
-          "Guard",
-          "HSDir",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "static-87-79-91-253.netcologne.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:4dd0:32b1:32de::a04d:cc9f"
       }
     },
     {
@@ -2138,7 +2140,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -2214,10 +2215,7 @@
         "nickname": "c0der",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -2406,9 +2404,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -2486,7 +2482,6 @@
         "nickname": "zagreus",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -2642,6 +2637,7 @@
         "nickname": "LV426",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -3231,9 +3227,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -3311,10 +3305,7 @@
         "nickname": "Linux",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -3430,10 +3421,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -3945,7 +3933,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -4022,7 +4009,9 @@
         "nickname": "RedSectorA",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -4260,16 +4249,13 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "vps-0b4f5cde.vps.ovh.net"
         ],
@@ -4342,10 +4328,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -4383,6 +4366,7 @@
         "nickname": "TorUtilizerCloudR3",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -4503,6 +4487,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -4737,7 +4722,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2605:6400:20:3b6:2605:6400:20:3b6"
       }
@@ -4768,7 +4753,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -5093,7 +5077,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -5551,7 +5534,6 @@
       "meta": {
         "nickname": "lakeshoreCrypto007",
         "flags": [
-          "Fast",
           "Running",
           "Stable",
           "V2Dir",
@@ -6243,6 +6225,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -6827,10 +6810,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -7259,10 +7239,7 @@
         "nickname": "merc",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -7490,9 +7467,7 @@
         "nickname": "Lamia1",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -7649,7 +7624,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -8043,7 +8017,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "ns3134799.ip-51-77-132.eu"
         ],
@@ -8542,7 +8516,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -8888,7 +8861,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -9132,7 +9104,7 @@
         ],
         "country": "ru",
         "country_name": "Russian Federation",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a09:7c47:0:c::1"
       }
@@ -9657,10 +9629,7 @@
         "nickname": "TorHet2",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -9822,7 +9791,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -9973,10 +9941,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -10051,7 +10016,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -10395,7 +10359,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -10821,10 +10784,7 @@
         "nickname": "PommespanzerDE8",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -10864,6 +10824,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -10902,8 +10863,6 @@
       "meta": {
         "nickname": "quark",
         "flags": [
-          "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -11719,7 +11678,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "vps-186630f2.vps.ovh.net"
         ],
@@ -11786,6 +11745,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -12135,10 +12095,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -12518,7 +12475,7 @@
         ],
         "country": "sg",
         "country_name": "Singapore",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2407:3640:2207:8882::1"
       }
@@ -14067,6 +14024,7 @@
         "nickname": "pilvi",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -14334,15 +14292,13 @@
         "nickname": "Unnamed",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2600:1700:f371:4200:1071:bd5:3d5c:c339"
       }
@@ -14634,6 +14590,7 @@
         "nickname": "retort",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -15060,7 +15017,7 @@
         ],
         "country": "jp",
         "country_name": "Japan",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2401:c080:1000:5a3c:138f:916a:21a1:ab0a"
       }
@@ -15170,10 +15127,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -15718,7 +15672,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -15995,16 +15948,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2602:f6f6:2:40d8::1"
       }
@@ -16040,7 +15990,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:470:c0a4::5"
       }
@@ -16409,6 +16359,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -16763,6 +16714,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -16838,7 +16790,9 @@
         "nickname": "nyonyonyo2",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -16853,7 +16807,7 @@
     },
     {
       "thing": [
-        "[2a09:61c0::44]:443"
+        "[2a09:61c0::44]:1984"
       ],
       "type": "ip:port",
       "description": "Tor relay node (torexitams24).",
@@ -17811,6 +17765,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -17926,6 +17881,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -18001,16 +17957,13 @@
         "nickname": "Killix",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "hk",
         "country_name": "Hong Kong",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a14:c380:d70:5::a"
       }
@@ -18467,6 +18420,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -18742,7 +18696,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -19136,7 +19089,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -19144,7 +19096,7 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "ams03.torexit.nl"
         ],
@@ -19177,7 +19129,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -19294,7 +19245,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -19414,6 +19364,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -19611,6 +19562,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -19878,7 +19830,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -20641,7 +20592,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -20798,7 +20748,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -21378,6 +21327,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -21687,6 +21637,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -21769,7 +21720,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -21814,7 +21764,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2603:c022:c005:64a7:4aa9:f428:9dfc:8e0"
       }
@@ -22651,6 +22601,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -22846,8 +22797,6 @@
         "nickname": "Unnamed",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -22927,7 +22876,10 @@
         "nickname": "PommespanzerDE1",
         "flags": [
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -23169,7 +23121,7 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a04:52c0:117:7157::1"
       }
@@ -23852,7 +23804,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -24832,7 +24783,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2602:fc24:14:9::a"
       }
@@ -25173,7 +25124,6 @@
           "Exit",
           "Fast",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -25285,7 +25235,6 @@
         "nickname": "arpsel",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -25633,10 +25582,8 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -25750,10 +25697,8 @@
         "nickname": "NTH27R1",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -26217,6 +26162,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -26261,7 +26207,7 @@
         ],
         "country": "ro",
         "country_name": "Romania",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a06:a880:2:fd02::1"
       }
@@ -26378,7 +26324,7 @@
         ],
         "country": "ro",
         "country_name": "Romania",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a0e:8f02:f04f:10b4::"
       }
@@ -26484,6 +26430,7 @@
         "nickname": "TorRelayDE",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -27683,7 +27630,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -27723,13 +27669,12 @@
         "nickname": "Karin4713",
         "flags": [
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "81-232-160-94-no600.tbcn.telia.com"
         ],
@@ -28190,7 +28135,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -28584,16 +28528,13 @@
         "nickname": "KllxTest",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "51-15-15-208.rev.poneytelecom.eu"
         ],
@@ -28625,10 +28566,7 @@
         "nickname": "NTH170R1",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -29055,6 +28993,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -29176,7 +29115,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "vps-0caf53fd.vps.ovh.net"
         ],
@@ -29523,7 +29462,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -29680,7 +29618,6 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -29949,6 +29886,7 @@
         "nickname": "MrTorRelay1",
         "flags": [
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -29989,6 +29927,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -30339,16 +30278,13 @@
         "nickname": "fflush",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
         "country": "at",
         "country_name": "Austria",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a00:63c1:10:4::c001:c0de"
       }
@@ -31204,7 +31140,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -31708,7 +31643,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -31907,6 +31841,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -32257,7 +32192,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -32304,7 +32238,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "10g.dnsdigi.com"
         ],
@@ -32653,6 +32587,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -32808,6 +32743,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -32849,7 +32785,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -33167,6 +33102,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -33438,7 +33374,6 @@
         "nickname": "SkibidiCrackhead",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -33825,6 +33760,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -33954,6 +33890,46 @@
           "v2202504171896332841.powersrv.de"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2a03:4000:b:d88::11e8"
+      }
+    },
+    {
+      "thing": [
+        "[2001:678:6d4:4010::1de]:9001"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (mol).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "mol",
+        "flags": [
+          "Fast",
+          "Guard",
+          "Running",
+          "Stable",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "md",
+        "country_name": "Moldova, Republic of",
+        "running": true,
+        "verified_host_names": [
+          "mol.stoerte.net"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2001:678:6d4:4010::1de"
       }
     },
     {
@@ -34171,6 +34147,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -34249,7 +34226,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -34443,7 +34419,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -34852,42 +34827,6 @@
     },
     {
       "thing": [
-        "[2001:19f0:7402:1af:5400:6ff:fec8:3995]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (cloudflare353).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "cloudflare353",
-        "flags": [
-          "Exit",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "gb",
-        "country_name": "United Kingdom of Great Britain and Northern Ireland",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:7402:1af:5400:6ff:fec8:3995"
-      }
-    },
-    {
-      "thing": [
         "[2607:b500:412:3f00::1]:443"
       ],
       "type": "ip:port",
@@ -34955,7 +34894,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "c-73-117-138-122.hsd1.pa.comcast.net"
         ],
@@ -35316,7 +35255,7 @@
     },
     {
       "thing": [
-        "[2003:e6:9714:8800:66ae:b9fc:e508:bfeb]:9001"
+        "[2003:e6:9710:b000:66ae:b9fc:e508:bfeb]:9001"
       ],
       "type": "ip:port",
       "description": "Tor relay node (0hmT0r).",
@@ -35347,9 +35286,9 @@
         "country_name": "Germany",
         "running": true,
         "verified_host_names": [
-          "pd9526186.dip0.t-ipconnect.de"
+          "pd9526f65.dip0.t-ipconnect.de"
         ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2003:e6:9714:8800:66ae:b9fc:e508:bfeb"
+        "external_url": "https://metrics.torproject.org/rs.html#search/2003:e6:9710:b000:66ae:b9fc:e508:bfeb"
       }
     },
     {
@@ -35571,6 +35510,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -35649,7 +35589,7 @@
         ],
         "country": "lt",
         "country_name": "Lithuania",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "mail.itpc.lv"
         ],
@@ -36262,7 +36202,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -36383,9 +36322,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -36396,42 +36333,6 @@
           "tor13.quintex.com"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2620:7:6003::103"
-      }
-    },
-    {
-      "thing": [
-        "[2a05:f480:1800:28b1:5400:6ff:fec8:65ff]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (paulnelson1968).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "paulnelson1968",
-        "flags": [
-          "Exit",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a05:f480:1800:28b1:5400:6ff:fec8:65ff"
       }
     },
     {
@@ -37203,7 +37104,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -37787,6 +37687,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -38332,7 +38233,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -38610,6 +38510,7 @@
         "nickname": "aanetuk",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -38688,6 +38589,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -38698,44 +38600,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:67c:e60:c0c:192:42:116:153"
-      }
-    },
-    {
-      "thing": [
-        "[2a0e:bfc7:100:e::6347]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (Hyperion).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "Hyperion",
-        "flags": [
-          "BadExit",
-          "Fast",
-          "MiddleOnly",
-          "Running",
-          "Stable",
-          "Valid"
-        ],
-        "country": "nl",
-        "country_name": "Netherlands",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a0e:bfc7:100:e::6347"
       }
     },
     {
@@ -39115,6 +38979,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -39240,7 +39105,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "veilguard.net"
         ],
@@ -39350,7 +39215,10 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -39967,7 +39835,7 @@
         ],
         "country": "hr",
         "country_name": "Croatia",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a0e:bfc0:0:12::ad83"
       }
@@ -40621,15 +40489,13 @@
         "nickname": "ValThor",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2603:c024:c001:207e:878b:2a1b:d247:f367"
       }
@@ -40817,6 +40683,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -41125,6 +40992,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -41164,6 +41032,7 @@
         "nickname": "MyHomeRelayCH",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -42288,13 +42157,12 @@
         "nickname": "Kalleponken4713",
         "flags": [
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "81-232-160-94-no600.tbcn.telia.com"
         ],
@@ -43335,10 +43203,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -43922,6 +43787,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -44008,44 +43874,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c2:1::159"
-      }
-    },
-    {
-      "thing": [
-        "[2001:41d0:ab04::4:0:6c]:443"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (FuckPutin).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "FuckPutin",
-        "flags": [
-          "Fast",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "cz",
-        "country_name": "Czechia",
-        "running": false,
-        "verified_host_names": [
-          "vps-edfd2d77.vps.ovh.net"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:41d0:ab04::4:0:6c"
       }
     },
     {
@@ -44458,9 +44286,7 @@
         "nickname": "Zephyrdead",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -44728,6 +44554,8 @@
         "nickname": "nickname",
         "flags": [
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -45120,12 +44948,13 @@
           "Exit",
           "Fast",
           "Running",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
         "country": "tw",
         "country_name": "Taiwan",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "118-163-74-160.hinet-ip.hinet.net"
         ],
@@ -45413,46 +45242,6 @@
     },
     {
       "thing": [
-        "[2001:67c:13c::35]:443"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (taz).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "taz",
-        "flags": [
-          "Fast",
-          "HSDir",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": true,
-        "verified_host_names": [
-          "kodos.taz.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:67c:13c::35"
-      }
-    },
-    {
-      "thing": [
         "[2a03:94e0:ffff:185:243:218:0:229]:9004"
       ],
       "type": "ip:port",
@@ -45478,7 +45267,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -46150,7 +45938,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -46550,9 +46337,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -46664,7 +46449,9 @@
         "nickname": "KllxTest",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -46784,6 +46571,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -47014,7 +46802,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -47063,7 +46850,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "ns3134799.ip-51-77-132.eu"
         ],
@@ -47097,7 +46884,6 @@
           "Exit",
           "Fast",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -47216,6 +47002,7 @@
         "nickname": "reblaze2",
         "flags": [
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -47257,10 +47044,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -47454,6 +47238,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -47877,7 +47662,6 @@
         "nickname": "forest06",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -47885,7 +47669,7 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a12:bec4:1821:4ef::a"
       }
@@ -48316,6 +48100,7 @@
         "nickname": "InVinoVeritas4",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -48666,6 +48451,7 @@
         "nickname": "tormentzone",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -50083,7 +49869,7 @@
     },
     {
       "thing": [
-        "[2a09:61c0::46]:443"
+        "[2a09:61c0::46]:1984"
       ],
       "type": "ip:port",
       "description": "Tor relay node (torexitams26).",
@@ -50188,7 +49974,6 @@
           "Exit",
           "Fast",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -50388,9 +50173,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -50428,7 +50211,9 @@
         "nickname": "RelayToTheWorld",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -51234,7 +51019,7 @@
         ],
         "country": "no",
         "country_name": "Norway",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a03:94e0:ffff:185:243:218:0:231"
       }
@@ -51500,10 +51285,7 @@
         "nickname": "torzilla",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -51941,44 +51723,6 @@
           "nycbug1.nycbug.org"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2610:1c0:0:5::16"
-      }
-    },
-    {
-      "thing": [
-        "[2604:a880:400:d1:0:4:f96c:c001]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (Mercybags).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "Mercybags",
-        "flags": [
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "us",
-        "country_name": "United States of America",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2604:a880:400:d1:0:4:f96c:c001"
       }
     },
     {
@@ -52898,6 +52642,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -53280,6 +53025,7 @@
           "HSDir",
           "Running",
           "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -53987,7 +53733,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -54417,6 +54162,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -54656,6 +54402,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -55151,6 +54898,7 @@
         "nickname": "portugesecartel",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -55314,7 +55062,7 @@
         ],
         "country": "gb",
         "country_name": "United Kingdom of Great Britain and Northern Ireland",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "furmur.org"
         ],
@@ -55701,7 +55449,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -56793,6 +56540,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -56982,6 +56730,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -57032,45 +56781,6 @@
         "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a14:1d00:0:1::af9"
-      }
-    },
-    {
-      "thing": [
-        "[2800:ba0:8:e2::9307:0]:9100"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (feng).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "feng",
-        "flags": [
-          "Fast",
-          "Guard",
-          "HSDir",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "co",
-        "country_name": "Colombia",
-        "running": true,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2800:ba0:8:e2::9307:0"
       }
     },
     {
@@ -57175,6 +56885,7 @@
         "nickname": "earthknight",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -57290,7 +57001,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -57329,7 +57039,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -57484,7 +57193,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -57914,6 +57622,7 @@
       "meta": {
         "nickname": "yodjpy",
         "flags": [
+          "Fast",
           "Running",
           "Stable",
           "V2Dir",
@@ -58190,6 +57899,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -58843,7 +58553,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -59847,6 +59556,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -60078,7 +59788,6 @@
         "nickname": "toky0",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -60316,7 +60025,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -61185,7 +60893,10 @@
         "nickname": "NTH33R1",
         "flags": [
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -61892,7 +61603,7 @@
     },
     {
       "thing": [
-        "[2a0a:a547:4838:0:ba27:ebff:fef2:f7d6]:587"
+        "[2a0a:a547:a6b7:0:ba27:ebff:fef2:f7d6]:587"
       ],
       "type": "ip:port",
       "description": "Tor relay node (Unnamed).",
@@ -61915,9 +61626,7 @@
         "nickname": "Unnamed",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -61925,9 +61634,9 @@
         "country_name": "Germany",
         "running": true,
         "verified_host_names": [
-          "xdsl-89-0-145-37.nc.de"
+          "xdsl-81-173-191-4.nc.de"
         ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a0a:a547:4838:0:ba27:ebff:fef2:f7d6"
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a0a:a547:a6b7:0:ba27:ebff:fef2:f7d6"
       }
     },
     {
@@ -62116,6 +61825,7 @@
       "meta": {
         "nickname": "particle7",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -62238,12 +61948,13 @@
           "HSDir",
           "Running",
           "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:67c:e60:c0c:192:42:116:101"
       }
@@ -63623,10 +63334,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -64305,46 +64013,6 @@
     },
     {
       "thing": [
-        "[2001:4ba0:cafe:1267::1]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (nobbs).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "nobbs",
-        "flags": [
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": true,
-        "verified_host_names": [
-          "nobbs.stoerte.net"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:4ba0:cafe:1267::1"
-      }
-    },
-    {
-      "thing": [
         "[2602:fc05::168]:9001"
       ],
       "type": "ip:port",
@@ -64803,10 +64471,7 @@
         "nickname": "NTH161R1",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -65800,7 +65465,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -66165,42 +65829,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a06:1700:4:3f::f98:23f1"
-      }
-    },
-    {
-      "thing": [
-        "[2806:103e:18:6ab6:cc8:b579:7d27:38f3]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (Clevatess).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "Clevatess",
-        "flags": [
-          "Fast",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "mx",
-        "country_name": "Mexico",
-        "running": true,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2806:103e:18:6ab6:cc8:b579:7d27:38f3"
       }
     },
     {
@@ -67305,6 +66933,42 @@
     },
     {
       "thing": [
+        "[2a04:dd00:26:9:216:3cff:fe5d:98ef]:9001"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (DollyParted).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "DollyParted",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "nl",
+        "country_name": "Netherlands",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a04:dd00:26:9:216:3cff:fe5d:98ef"
+      }
+    },
+    {
+      "thing": [
         "[2001:bc8:1640:317d:dc00:ff:fe39:7bb3]:445"
       ],
       "type": "ip:port",
@@ -67641,6 +67305,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -67791,10 +67456,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -67831,6 +67493,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -67985,6 +67648,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -68145,6 +67809,7 @@
         "nickname": "torbirdraven",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -68378,7 +68043,6 @@
           "Exit",
           "Fast",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -68426,9 +68090,7 @@
         "country": "us",
         "country_name": "United States of America",
         "running": false,
-        "verified_host_names": [
-          "209-151-155-24.us-nyc1.upcloud.host"
-        ],
+        "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2605:7380:8000:1000:780d:bcff:feb1:3c45"
       }
     },
@@ -68538,6 +68200,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -68575,7 +68238,9 @@
         "nickname": "FireCudaRelay",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -68802,7 +68467,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -68959,6 +68623,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -69074,7 +68739,6 @@
         "nickname": "farthinder",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -69114,7 +68778,6 @@
         "nickname": "forest31",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -69653,7 +69316,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -69814,7 +69476,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -69932,6 +69593,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -70125,6 +69787,7 @@
         "nickname": "LV223",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -70277,10 +69940,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -71374,7 +71034,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -71529,6 +71188,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "de",
@@ -71605,6 +71265,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -72110,7 +71771,10 @@
         "nickname": "unprintable",
         "flags": [
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -72148,10 +71812,7 @@
         "nickname": "torlan",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -72188,7 +71849,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -72267,6 +71927,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -72583,10 +72244,7 @@
         "nickname": "floydrose",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -73051,10 +72709,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -73326,7 +72981,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -73603,6 +73257,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -73798,10 +73453,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -73840,6 +73492,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -74902,7 +74555,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a01:239:315:5900::1"
       }
@@ -75200,7 +74853,6 @@
         "nickname": "SmallTownHosting",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -75293,42 +74945,6 @@
     },
     {
       "thing": [
-        "[2001:19f0:6001:2a22:5400:6ff:fec8:10d0]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (LeoYoun5).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "LeoYoun5",
-        "flags": [
-          "Exit",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "us",
-        "country_name": "United States of America",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:6001:2a22:5400:6ff:fec8:10d0"
-      }
-    },
-    {
-      "thing": [
         "[2a10:8a40:f313::29]:443"
       ],
       "type": "ip:port",
@@ -75392,6 +75008,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -75680,7 +75297,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "vps-68e81b2b.vps.ovh.net"
         ],
@@ -75985,10 +75602,7 @@
         "nickname": "Killix",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -76724,6 +76338,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -76917,10 +76532,7 @@
         "nickname": "puff3rf1sh",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -77009,6 +76621,41 @@
           "berlin01.tor-exit.artikel10.org"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c2::28"
+      }
+    },
+    {
+      "thing": [
+        "[2a03:90c0:8e::1c1]:443"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (CIA).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "CIA",
+        "flags": [
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "lu",
+        "country_name": "Luxembourg",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a03:90c0:8e::1c1"
       }
     },
     {
@@ -77118,8 +76765,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -77197,7 +76842,9 @@
         "nickname": "NTH169R1",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -77708,7 +77355,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -78056,6 +77706,7 @@
       "meta": {
         "nickname": "fbjtn8111",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -78614,7 +78265,9 @@
         "flags": [
           "BadExit",
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -78727,6 +78380,7 @@
         "nickname": "Mariposa",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -78921,7 +78575,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -80024,43 +79677,6 @@
     },
     {
       "thing": [
-        "[2a05:f480:1800:987:5400:4ff:fe0d:c0f2]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (trustytorplace).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "trustytorplace",
-        "flags": [
-          "Fast",
-          "Running",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "mk-l.info"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a05:f480:1800:987:5400:4ff:fe0d:c0f2"
-      }
-    },
-    {
-      "thing": [
         "[2600:3c00::2000:62ff:fe52:79cc]:9001"
       ],
       "type": "ip:port",
@@ -80202,7 +79818,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -80279,9 +79894,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -80433,7 +80046,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -80553,9 +80165,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -80982,6 +80592,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -81020,6 +80631,7 @@
       "meta": {
         "nickname": "Unnamed",
         "flags": [
+          "Fast",
           "Running",
           "Valid"
         ],
@@ -81324,7 +80936,9 @@
         "nickname": "InVinoVeritas1",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -82067,7 +81681,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2605:6400:20:3b6:2605:6400:20:3b6"
       }
@@ -82186,7 +81800,7 @@
         ],
         "country": "it",
         "country_name": "Italy",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a0e:b107:dd0::3:fa35:9316"
       }
@@ -82218,7 +81832,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -83222,10 +82835,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -83584,9 +83194,7 @@
         "nickname": "as215248tor1b",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -84834,7 +84442,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -85666,7 +85273,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -85817,7 +85423,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -85974,9 +85579,7 @@
         "nickname": "Schnurpselpeter",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -86168,7 +85771,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -86208,6 +85810,7 @@
         "nickname": "TORnadoTime",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -87064,10 +86667,8 @@
         "nickname": "reginjet",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -87465,8 +87066,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -87584,10 +87183,7 @@
         "nickname": "fuckfbi",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -88205,6 +87801,7 @@
         "nickname": "Olive",
         "flags": [
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -88300,6 +87897,44 @@
           "asylum.corewars.net"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2607:f130:0:1e8:210::beef"
+      }
+    },
+    {
+      "thing": [
+        "[2a09:61c0::44]:443"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (torexitams24a).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "torexitams24a",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "nl",
+        "country_name": "Netherlands",
+        "running": true,
+        "verified_host_names": [
+          "ams24.torexit.nl"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a09:61c0::44"
       }
     },
     {
@@ -88445,10 +88080,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -88977,7 +88609,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -89558,6 +89189,7 @@
       "meta": {
         "nickname": "mhnjv8410",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -89606,9 +89238,7 @@
         "country": "nl",
         "country_name": "Netherlands",
         "running": true,
-        "verified_host_names": [
-          "51-158-204-156.rev.poneytelecom.eu"
-        ],
+        "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:bc8:17c0:502:9eb6:54ff:febb:5034"
       }
     },
@@ -89755,7 +89385,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -90141,6 +89770,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -90506,47 +90136,6 @@
           "tor-exit-read-me.dfri.se"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:67c:289c:2::40"
-      }
-    },
-    {
-      "thing": [
-        "[2a0b:f4c0:16c:4::1]:9100"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (F3Netze).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "F3Netze",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit-1.zbau.f3netze.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c0:16c:4::1"
       }
     },
     {
@@ -91169,7 +90758,7 @@
         ],
         "country": "fi",
         "country_name": "Finland",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a11:840:21:1b::8044:bac9"
       }
@@ -91524,7 +91113,7 @@
         ],
         "country": "hu",
         "country_name": "Hungary",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a01:270:99c7::acdc"
       }
@@ -92612,7 +92201,10 @@
         "nickname": "Minotaur2",
         "flags": [
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -92650,6 +92242,7 @@
         "nickname": "myNiceRelay",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -93002,6 +92595,7 @@
       "meta": {
         "nickname": "LillyCL",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -93047,7 +92641,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "ip87-106-222-192.pbiaas.com"
         ],
@@ -93356,13 +92950,12 @@
         "flags": [
           "Exit",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "81-232-160-94-no600.tbcn.telia.com"
         ],
@@ -93506,7 +93099,9 @@
         "nickname": "eclipse23",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "StaleDesc",
           "V2Dir",
           "Valid"
@@ -94856,10 +94451,7 @@
         "nickname": "CSanders",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -95341,47 +94933,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a0e:97c0:3ea:8e::1"
-      }
-    },
-    {
-      "thing": [
-        "[2a0b:f4c0:16c:4::1]:9000"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (F3Netze).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "F3Netze",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit-1.zbau.f3netze.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c0:16c:4::1"
       }
     },
     {
@@ -96026,7 +95577,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -96221,7 +95774,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -96455,7 +96007,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "vps-3dfb4edf.vps.ovh.net"
         ],
@@ -96489,6 +96041,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -96607,7 +96160,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -96974,47 +96529,6 @@
     },
     {
       "thing": [
-        "[2a0b:f4c0:16c:1::1]:9100"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (F3Netze).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "F3Netze",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit-4.zbau.f3netze.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c0:16c:1::1"
-      }
-    },
-    {
-      "thing": [
         "[2a03:4000:5e:69f:e8ea:63ff:fe5c:759f]:9001"
       ],
       "type": "ip:port",
@@ -97237,6 +96751,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -97735,7 +97250,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -98208,7 +97722,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -98400,7 +97913,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -98447,9 +97959,9 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": true,
+        "running": false,
         "verified_host_names": [
-          "tor-exit.sabotage.org"
+          "ams15.torexit.nl"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2a09:61c0::beef"
       }
@@ -98558,10 +98070,7 @@
         "nickname": "TorzurWelt",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -98684,7 +98193,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "tor-relay.dozer.d00t.de"
         ],
@@ -99231,47 +98740,6 @@
     },
     {
       "thing": [
-        "[2001:b011:c00b:83fa:956d:7276:a317:a672]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (AkiraRelay).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "AkiraRelay",
-        "flags": [
-          "Fast",
-          "Guard",
-          "HSDir",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "tw",
-        "country_name": "Taiwan",
-        "running": false,
-        "verified_host_names": [
-          "59-127-99-68.hinet-ip.hinet.net"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:b011:c00b:83fa:956d:7276:a317:a672"
-      }
-    },
-    {
-      "thing": [
         "[2001:41d0:801:2000::5f62]:443"
       ],
       "type": "ip:port",
@@ -99340,7 +98808,7 @@
         ],
         "country": "hu",
         "country_name": "Hungary",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a10:c800:1:6efd::1"
       }
@@ -100073,7 +99541,9 @@
         "nickname": "GermanCraft16",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -100424,7 +99894,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -100704,6 +100173,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -100865,10 +100335,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -101055,9 +100522,7 @@
         "nickname": "Killix",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -101135,7 +100600,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -101454,7 +100921,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -101573,7 +101039,9 @@
         "nickname": "purpleHaZ3",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -101609,16 +101077,13 @@
         "nickname": "server69",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:1af8:4060:a01f::a82e"
       }
@@ -101807,6 +101272,7 @@
       "meta": {
         "nickname": "veespLV",
         "flags": [
+          "Fast",
           "Running",
           "Stable",
           "V2Dir",
@@ -101844,9 +101310,7 @@
         "nickname": "bauruine",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -101962,9 +101426,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -102509,10 +101971,7 @@
         "nickname": "outatime",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -103054,10 +102513,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -103255,6 +102711,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "us",
@@ -103569,7 +103026,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "vps-7d712aa3.vps.ovh.net"
         ],
@@ -103610,7 +103067,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2602:fccf:310:1:be24:11ff:feaa:b25d"
       }
@@ -103801,10 +103258,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -104160,7 +103614,7 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:1af8:4060:a01f::53f"
       }
@@ -104342,6 +103796,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -104416,9 +103871,7 @@
         "nickname": "666Sirocco",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -104499,7 +103952,6 @@
           "Fast",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -104726,10 +104178,7 @@
         "nickname": "portoloin",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -104767,6 +104216,7 @@
         "nickname": "paranoidAndroid",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -105201,7 +104651,7 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a12:bec4:1821:631::a"
       }
@@ -105422,10 +104872,7 @@
         "nickname": "Killix",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -105496,10 +104943,7 @@
         "nickname": "Killix",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -105613,6 +105057,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -105817,7 +105262,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "vps-d57187f1.vps.ovh.net"
         ],
@@ -106211,7 +105656,7 @@
         ],
         "country": "id",
         "country_name": "Indonesia",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "id-relay.brokenbotnet.com"
         ],
@@ -106598,6 +106043,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -106674,7 +106120,9 @@
         "nickname": "bauruine",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -106710,7 +106158,6 @@
         "nickname": "ShinobiMamori",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -107256,7 +106703,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -107336,8 +106782,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -107576,7 +107020,9 @@
         "nickname": "TorUtilizerCloudR4",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -107845,10 +107291,7 @@
         "nickname": "mdfnet2",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -107941,7 +107384,7 @@
     },
     {
       "thing": [
-        "[2001:9e8:1a78:d00:0:dead:beef:cafe]:9001"
+        "[2001:9e8:1a46:f900:0:dead:beef:cafe]:9001"
       ],
       "type": "ip:port",
       "description": "Tor relay node (yeeehaawww).",
@@ -107972,9 +107415,9 @@
         "country_name": "Germany",
         "running": true,
         "verified_host_names": [
-          "i5C74EAAA.versanet.de"
+          "i5C74E8AE.versanet.de"
         ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:9e8:1a78:d00:0:dead:beef:cafe"
+        "external_url": "https://metrics.torproject.org/rs.html#search/2001:9e8:1a46:f900:0:dead:beef:cafe"
       }
     },
     {
@@ -108159,7 +107602,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -108625,6 +108067,7 @@
       "meta": {
         "nickname": "scxyu6530",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -108816,7 +108259,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -109220,7 +108662,7 @@
         ],
         "country": "ca",
         "country_name": "Canada",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "vps-01b775c5.vps.ovh.ca"
         ],
@@ -109343,7 +108785,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2602:fccf:310:1:be24:11ff:fe11:7832"
       }
@@ -109724,7 +109166,6 @@
           "Exit",
           "Fast",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -109882,15 +109323,13 @@
         "nickname": "GentooLibre",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "au",
         "country_name": "Australia",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2403:5809:7215::cafe:cafe"
       }
@@ -109997,6 +109436,7 @@
         "nickname": "R2D2",
         "flags": [
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -110349,6 +109789,7 @@
         "nickname": "Totoro4220",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -110547,7 +109988,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -111051,7 +110495,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -111248,10 +110691,7 @@
         "nickname": "dao",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -111412,6 +110852,7 @@
         "nickname": "t2",
         "flags": [
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -112347,7 +111788,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -112422,10 +111862,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -112537,10 +111974,7 @@
         "nickname": "KavinRelay",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -112964,6 +112398,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -113618,9 +113053,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -114315,6 +113748,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -114781,6 +114215,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -115249,7 +114684,7 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:1af8:4060:a01f::2ddb"
       }
@@ -115360,7 +114795,6 @@
         "nickname": "bauruine",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -115593,7 +115027,9 @@
         "nickname": "MCassanitiVPS",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -115998,7 +115434,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "66-165-240-52.static.hvvc.us"
         ],
@@ -116068,9 +115504,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -116532,6 +115966,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -116694,6 +116129,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -117049,7 +116485,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -117162,6 +116597,7 @@
         "nickname": "waterknight",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -117207,7 +116643,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a12:de40:21:33ab::"
       }
@@ -117237,7 +116673,9 @@
         "nickname": "Minotaur",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -117507,6 +116945,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -118014,7 +117453,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -118092,7 +117530,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -118130,10 +117567,7 @@
         "nickname": "TORPauloRelayFR",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -118595,7 +118029,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -119262,10 +118695,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -119414,7 +118844,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -119768,7 +119197,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -119967,7 +119395,7 @@
         ],
         "country": "es",
         "country_name": "Spain",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "ip217-160-228-85.pbiaas.com"
         ],
@@ -120623,7 +120051,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "vps-7d712aa3.vps.ovh.net"
         ],
@@ -121385,6 +120813,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -121627,7 +121056,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "vps-68e81b2b.vps.ovh.net"
         ],
@@ -121932,6 +121361,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -121972,7 +121402,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -121980,7 +121409,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "marylou.nos-oignons.net"
         ],
@@ -122092,7 +121521,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -122287,7 +121715,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -122367,7 +121794,6 @@
         "flags": [
           "Fast",
           "Running",
-          "Stable",
           "Valid"
         ],
         "country": "nl",
@@ -122646,7 +122072,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a01:239:27c:a00::1"
       }
@@ -122950,9 +122376,7 @@
         "nickname": "NTH177R1",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -123069,7 +122493,9 @@
         "nickname": "Nightingali",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -123526,7 +122952,9 @@
         "nickname": "gnampf4i30",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -123564,6 +122992,7 @@
         "nickname": "CzechDS",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -123949,7 +123378,6 @@
         "nickname": "Vernawayne3",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -124025,7 +123453,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -124033,7 +123460,7 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "ams22.torexit.nl"
         ],
@@ -124158,6 +123585,46 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a02:2455:85d3:7e00:be24:11ff:fe38:ddf"
+      }
+    },
+    {
+      "thing": [
+        "[2a03:4000:43:216:5443:2bff:fe16:c6b5]:9001"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (thesergeant).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "thesergeant",
+        "flags": [
+          "Fast",
+          "Guard",
+          "Running",
+          "Stable",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "de",
+        "country_name": "Germany",
+        "running": true,
+        "verified_host_names": [
+          "v2202004119962116040.hotsrv.de"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a03:4000:43:216:5443:2bff:fe16:c6b5"
       }
     },
     {
@@ -124383,7 +123850,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -124579,7 +124045,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -124712,47 +124181,6 @@
     },
     {
       "thing": [
-        "[2a0b:f4c0:16c:3::1]:9100"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (F3Netze).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "F3Netze",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit-2.zbau.f3netze.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c0:16c:3::1"
-      }
-    },
-    {
-      "thing": [
         "[2001:67c:e60:c0c:192:42:116:68]:9001"
       ],
       "type": "ip:port",
@@ -124856,7 +124284,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -125013,7 +124440,6 @@
         "nickname": "ChristiansBlog",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -125224,7 +124650,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2602:f6f6:2:f64f::1"
       }
@@ -125453,6 +124879,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -125591,44 +125018,6 @@
     },
     {
       "thing": [
-        "[2a12:3e80:400:206::]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (heartbreakhotel).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "heartbreakhotel",
-        "flags": [
-          "Fast",
-          "HSDir",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a12:3e80:400:206::"
-      }
-    },
-    {
-      "thing": [
         "[2603:3:6106:2460::]:21"
       ],
       "type": "ip:port",
@@ -125652,10 +125041,7 @@
         "nickname": "Minotaur8",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -126007,7 +125393,9 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -126631,10 +126019,7 @@
         "nickname": "NTH14R1",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -126827,6 +126212,7 @@
         "nickname": "TacticalAtom",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -127023,7 +126409,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -127179,9 +126564,7 @@
         "nickname": "RelayGeek09",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -127340,7 +126723,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "vmi3632700.contaboserver.net"
         ],
@@ -127765,7 +127148,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -128725,7 +128107,7 @@
         ],
         "country": "ch",
         "country_name": "Switzerland",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a05:4740:1b5::1"
       }
@@ -128755,6 +128137,7 @@
         "nickname": "supermid",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -129030,47 +128413,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:470:deb8:a1::2"
-      }
-    },
-    {
-      "thing": [
-        "[2a0b:f4c0:16c:1::1]:9000"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (F3Netze).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "F3Netze",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit-4.zbau.f3netze.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c0:16c:1::1"
       }
     },
     {
@@ -129543,88 +128885,6 @@
           "tor60.quintex.com"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2620:7:6003::149"
-      }
-    },
-    {
-      "thing": [
-        "[2a0b:f4c0:16c:2::1]:9100"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (F3Netze).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "F3Netze",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit-3.zbau.f3netze.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c0:16c:2::1"
-      }
-    },
-    {
-      "thing": [
-        "[2a0b:f4c0:16c:3::1]:9000"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (F3Netze).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "F3Netze",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit-2.zbau.f3netze.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c0:16c:3::1"
       }
     },
     {
@@ -130150,7 +129410,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -130280,7 +129539,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "static.188.66.4.46.clients.your-server.de"
         ],
@@ -130359,7 +129618,7 @@
         ],
         "country": "jp",
         "country_name": "Japan",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:ac8:40:113:0:1:bf3d:ca1c"
       }
@@ -130547,7 +129806,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -131455,6 +130713,7 @@
         "nickname": "BlugoldAwesome",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -132158,16 +131417,14 @@
         "nickname": "FlashCamel",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "StaleDesc",
           "V2Dir",
           "Valid"
         ],
         "country": "in",
         "country_name": "India",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a0c:b641:3a1:1004::12b"
       }
@@ -132198,9 +131455,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -132321,7 +131576,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -132474,10 +131728,7 @@
         "nickname": "LandShrimp",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -132524,7 +131775,7 @@
         ],
         "country": "hr",
         "country_name": "Croatia",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "vps36918.maxko-hosting.net"
         ],
@@ -133026,9 +132277,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -133107,7 +132356,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -133224,10 +132472,7 @@
         "nickname": "Diamondback",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -134151,6 +133396,7 @@
         "nickname": "ieditedtheconfig",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -134387,7 +133633,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "vmi2703612.contaboserver.net"
         ],
@@ -134545,7 +133791,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "static.6.212.69.159.clients.your-server.de"
         ],
@@ -134849,7 +134095,9 @@
         "nickname": "ShinobiWashi",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -134886,6 +134134,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -134926,9 +134175,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -135314,6 +134561,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -135354,10 +134602,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -135436,7 +134681,6 @@
           "Exit",
           "Fast",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -135590,6 +134834,8 @@
         "nickname": "Echidna11",
         "flags": [
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -135597,7 +134843,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "echidna1.brandonkuschel.com"
         ],
@@ -135725,7 +134971,7 @@
     },
     {
       "thing": [
-        "[2003:c7:4f18:a500:2e0:4cff:fea2:8420]:9001"
+        "[2003:c7:4f1c:c200:2e0:4cff:fea2:8420]:9001"
       ],
       "type": "ip:port",
       "description": "Tor relay node (sakadagami).",
@@ -135756,9 +135002,9 @@
         "country_name": "Germany",
         "running": true,
         "verified_host_names": [
-          "p5b0834a5.dip0.t-ipconnect.de"
+          "p4fef1b09.dip0.t-ipconnect.de"
         ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2003:c7:4f18:a500:2e0:4cff:fea2:8420"
+        "external_url": "https://metrics.torproject.org/rs.html#search/2003:c7:4f1c:c200:2e0:4cff:fea2:8420"
       }
     },
     {
@@ -135950,7 +135196,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -136379,6 +135624,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -136997,7 +136243,6 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -137076,7 +136321,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "mrkos.uberspace.de"
         ],
@@ -137085,7 +136330,7 @@
     },
     {
       "thing": [
-        "[2001:9e8:94:be00:d250:99ff:fec2:ffb3]:9001"
+        "[2001:9e8:ac:2c00:d250:99ff:fec2:ffb3]:9001"
       ],
       "type": "ip:port",
       "description": "Tor relay node (omue).",
@@ -137118,7 +136363,7 @@
         "verified_host_names": [
           "69-7-142-46.pool.kielnet.net"
         ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:9e8:94:be00:d250:99ff:fec2:ffb3"
+        "external_url": "https://metrics.torproject.org/rs.html#search/2001:9e8:ac:2c00:d250:99ff:fec2:ffb3"
       }
     },
     {
@@ -137530,10 +136775,7 @@
         "nickname": "Beanbag",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -137572,7 +136814,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -137839,10 +137080,7 @@
         "nickname": "AntonPann8",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -137878,7 +137116,6 @@
         "nickname": "ShinobiShishi",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -137886,7 +137123,7 @@
         ],
         "country": "za",
         "country_name": "South Africa",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "za-relay.brokenbotnet.com"
         ],
@@ -138118,7 +137355,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "haktar.org"
         ],
@@ -138228,6 +137465,7 @@
       "meta": {
         "nickname": "meowdy",
         "flags": [
+          "Fast",
           "Running",
           "Stable",
           "V2Dir",
@@ -138504,10 +137742,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -138856,9 +138091,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -139442,7 +138675,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -139923,6 +139155,44 @@
     },
     {
       "thing": [
+        "[2003:e6:707:7b00:2ecf:67ff:fe71:a4f5]:9001"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (ekadagami).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "ekadagami",
+        "flags": [
+          "Fast",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "de",
+        "country_name": "Germany",
+        "running": true,
+        "verified_host_names": [
+          "p57a2762a.dip0.t-ipconnect.de"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2003:e6:707:7b00:2ecf:67ff:fe71:a4f5"
+      }
+    },
+    {
+      "thing": [
         "[2a0d:bbc7::f816:3eff:feef:f6be]:9001"
       ],
       "type": "ip:port",
@@ -140137,10 +139407,7 @@
         "nickname": "NTH23R1",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -140337,6 +139604,7 @@
         "nickname": "tor101",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -140410,10 +139678,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -140702,6 +139967,43 @@
     },
     {
       "thing": [
+        "[2a01:4f8:211:1c94::77]:9099"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (vpnhub1).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "vpnhub1",
+        "flags": [
+          "Fast",
+          "Running",
+          "Valid"
+        ],
+        "country": "de",
+        "country_name": "Germany",
+        "running": true,
+        "verified_host_names": [
+          "vpnhub1.hamburg.ccc.de"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a01:4f8:211:1c94::77"
+      }
+    },
+    {
+      "thing": [
         "[2a02:c204:2195:2012::1]:443"
       ],
       "type": "ip:port",
@@ -140877,7 +140179,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -141941,10 +141242,7 @@
         "nickname": "BSDrelay01",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -142536,7 +141834,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -143559,6 +142856,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -143566,7 +142864,7 @@
         ],
         "country": "br",
         "country_name": "Brazil",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "srv1782160.hstgr.cloud"
         ],
@@ -143638,9 +142936,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -144197,7 +143493,7 @@
         ],
         "country": "hu",
         "country_name": "Hungary",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a01:270:9293::1"
       }
@@ -144631,7 +143927,7 @@
     },
     {
       "thing": [
-        "[2a09:61c0::62]:443"
+        "[2a09:61c0::35]:443"
       ],
       "type": "ip:port",
       "description": "Tor relay node (torexitams14).",
@@ -144662,9 +143958,9 @@
         "country_name": "Netherlands",
         "running": true,
         "verified_host_names": [
-          "ams42.torexit.nl"
+          "ams15.torexit.nl"
         ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a09:61c0::62"
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a09:61c0::35"
       }
     },
     {
@@ -145231,9 +144527,7 @@
         "nickname": "as215248tor1a",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -145859,7 +145153,9 @@
         "nickname": "VocalZeroRelay",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -146400,6 +145696,47 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c2:1::139"
+      }
+    },
+    {
+      "thing": [
+        "[2a09:be40:28ff:50:c4c9:3dff:fea3:f4fa]:9001"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (Playstar02).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "Playstar02",
+        "flags": [
+          "Exit",
+          "Fast",
+          "Guard",
+          "Running",
+          "Stable",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "se",
+        "country_name": "Sweden",
+        "running": true,
+        "verified_host_names": [
+          "tor-relay02.playstar.se"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a09:be40:28ff:50:c4c9:3dff:fea3:f4fa"
       }
     },
     {
@@ -147127,7 +146464,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -147434,7 +146770,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -147751,7 +147086,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -147760,9 +147094,7 @@
         "country": "nl",
         "country_name": "Netherlands",
         "running": true,
-        "verified_host_names": [
-          "51-158-204-114.rev.poneytelecom.eu"
-        ],
+        "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:bc8:17c0:504:9eb6:54ff:febb:54e4"
       }
     },
@@ -148143,10 +147475,8 @@
         "nickname": "MichaelAngelo",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -149166,6 +148496,7 @@
         "nickname": "artikel5ev10",
         "flags": [
           "Exit",
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -149204,16 +148535,13 @@
         "nickname": "rivon",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "relay.vonderste.in"
         ],
@@ -149245,9 +148573,8 @@
         "nickname": "jjv28fn292",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -149559,12 +148886,11 @@
         "flags": [
           "Fast",
           "Running",
-          "Stable",
           "Valid"
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2602:ff16:11:1155::1"
       }
@@ -150371,10 +149697,7 @@
         "nickname": "what",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -151033,6 +150356,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "cl",
@@ -152238,7 +151562,6 @@
         "flags": [
           "Fast",
           "Running",
-          "V2Dir",
           "Valid"
         ],
         "country": "nl",
@@ -152355,7 +151678,9 @@
         "nickname": "fr13nds",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -152784,10 +152109,7 @@
         "nickname": "pulsetor",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -153679,7 +153001,10 @@
         "nickname": "thefire",
         "flags": [
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -153886,6 +153211,45 @@
           "213-163-196-82.sg-sin1.upcloud.host"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2a04:3543:1000:2310:6c6c:c2ff:fe58:62b1"
+      }
+    },
+    {
+      "thing": [
+        "[2a02:a461:1667:1:5054:ff:fe3e:3ed7]:9001"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (geadsbeytesm).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "geadsbeytesm",
+        "flags": [
+          "Fast",
+          "Running",
+          "Stable",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "nl",
+        "country_name": "Netherlands",
+        "running": true,
+        "verified_host_names": [
+          "77-163-96-197.fixed.kpn.net"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a02:a461:1667:1:5054:ff:fe3e:3ed7"
       }
     },
     {
@@ -154540,7 +153904,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -155001,10 +154364,7 @@
         "nickname": "WestonReed",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -155198,6 +154558,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -155542,7 +154903,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -156047,7 +155407,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -156246,6 +155605,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -156822,7 +156182,6 @@
         "nickname": "critic4ly",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -156861,7 +156220,6 @@
         "flags": [
           "Fast",
           "Running",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -158508,10 +157866,7 @@
         "nickname": "rafsnicesrelay",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -158862,7 +158217,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -159023,7 +158377,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -159110,46 +158463,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:67c:e60:c0c:192:42:116:104"
-      }
-    },
-    {
-      "thing": [
-        "[2a00:6020:b2c5:d8e8:bbbb:bad4:5326:3d78]:443"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (motor).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "motor",
-        "flags": [
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": true,
-        "verified_host_names": [
-          "p54ac79c1.dip0.t-ipconnect.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a00:6020:b2c5:d8e8:bbbb:bad4:5326:3d78"
       }
     },
     {
@@ -159401,9 +158714,7 @@
         "nickname": "Killix",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -160312,6 +159623,7 @@
         "nickname": "Killix",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -160502,6 +159814,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -160853,7 +160166,6 @@
           "Fast",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -161007,10 +160319,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -161046,10 +160355,7 @@
         "nickname": "NTH31R1",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -161085,10 +160391,7 @@
         "nickname": "hell",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -161363,6 +160666,7 @@
         "nickname": "ShinobiSaboten",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -161555,7 +160859,6 @@
         "flags": [
           "Fast",
           "Running",
-          "StaleDesc",
           "Valid"
         ],
         "country": "de",
@@ -161593,7 +160896,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -162256,7 +161558,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -162296,6 +161597,7 @@
         "nickname": "Escape2Space",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -162639,10 +161941,7 @@
         "nickname": "BSDrelay10",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -162758,7 +162057,6 @@
           "Fast",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -162832,7 +162130,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -162872,10 +162169,7 @@
         "nickname": "RelayGeek05",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -164163,6 +163457,7 @@
       "meta": {
         "nickname": "kllwu1854",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -164276,6 +163571,7 @@
       "meta": {
         "nickname": "syopf0909",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -164390,6 +163686,7 @@
       "meta": {
         "nickname": "MyTorRelay",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -164469,10 +163766,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -164904,7 +164198,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -165100,6 +164393,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "de",
@@ -165406,6 +164700,7 @@
       "meta": {
         "nickname": "asxkd0299",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -165679,7 +164974,6 @@
           "Exit",
           "Fast",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -165794,7 +165088,6 @@
         "nickname": "AussieOnion",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -166457,7 +165750,10 @@
         "nickname": "TORlabproject",
         "flags": [
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -166495,7 +165791,9 @@
         "nickname": "bauruine",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -166611,7 +165909,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -166652,6 +165949,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -166890,7 +166188,6 @@
           "Exit",
           "Fast",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -168197,6 +167494,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -168241,7 +167539,7 @@
         ],
         "country": "pl",
         "country_name": "Poland",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a12:a800:2:1:45:138:16:151"
       }
@@ -168312,6 +167610,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -169509,7 +168808,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -169698,6 +168996,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -170323,7 +169622,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -170489,6 +169787,43 @@
           "tor6.as215248.net"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2a14:38c0:2::190"
+      }
+    },
+    {
+      "thing": [
+        "[2604:2dc0:100:a9e::1]:9001"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (judith).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "judith",
+        "flags": [
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": false,
+        "verified_host_names": [
+          "jprcloud1.readenet.com"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2604:2dc0:100:a9e::1"
       }
     },
     {
@@ -170874,7 +170209,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -171388,7 +170722,7 @@
         ],
         "country": "my",
         "country_name": "Malaysia",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "my-relay.brokenbotnet.com"
         ],
@@ -171507,7 +170841,7 @@
         ],
         "country": "at",
         "country_name": "Austria",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a00:63c1:10:41::2"
       }
@@ -171655,7 +170989,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2605:6400:20:3b6:2605:6400:20:3b6"
       }
@@ -171805,7 +171139,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -171977,42 +171313,6 @@
           "tor2.quintex.com"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2620:7:6003::121"
-      }
-    },
-    {
-      "thing": [
-        "[2001:19f0:9002:411:5400:6ff:fec7:cacf]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (NightJul73).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "NightJul73",
-        "flags": [
-          "Exit",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "us",
-        "country_name": "United States of America",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:9002:411:5400:6ff:fec7:cacf"
       }
     },
     {
@@ -172272,7 +171572,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -172362,7 +171661,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "vps-d4b0b7b8.vps.ovh.net"
         ],
@@ -172670,13 +171969,15 @@
         "nickname": "MalfunctioningEddy",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:558:6017:b1:95ae:955b:b3e8:a458"
       }
@@ -172708,6 +172009,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -174423,10 +173725,7 @@
         "nickname": "vaseline",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -175084,9 +174383,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -175915,7 +175212,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -176316,10 +175612,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -176435,10 +175728,7 @@
         "nickname": "Belgique",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -176907,10 +176197,7 @@
         "nickname": "OROGOM",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -177311,6 +176598,77 @@
     },
     {
       "thing": [
+        "[2602:ffd5:911:16::2]:443"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (fluffypancakes001ca).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "fluffypancakes001ca",
+        "flags": [
+          "Fast",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "ca",
+        "country_name": "Canada",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2602:ffd5:911:16::2"
+      }
+    },
+    {
+      "thing": [
+        "[2602:ffd5:911:16::2]:443"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (fluffypancakes001ca).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "fluffypancakes001ca",
+        "flags": [
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "ca",
+        "country_name": "Canada",
+        "running": false,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2602:ffd5:911:16::2"
+      }
+    },
+    {
+      "thing": [
         "[2001:1b60:3:34:1107:102:0:1]:1337"
       ],
       "type": "ip:port",
@@ -177540,7 +176898,7 @@
         ],
         "country": "ca",
         "country_name": "Canada",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "tor-exit.ca.localenby.is"
         ],
@@ -177577,7 +176935,7 @@
         ],
         "country": "hu",
         "country_name": "Hungary",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a10:c800:1:6efd::1"
       }
@@ -177607,7 +176965,6 @@
         "nickname": "ShinobiKyuuryuu",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -177689,7 +177046,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -177697,7 +177053,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "v220250428793334782.supersrv.de"
         ],
@@ -177767,7 +177123,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -178013,7 +177368,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2602:fccf:310:1:be24:11ff:fe99:59b"
       }
@@ -178082,7 +177437,6 @@
         "nickname": "Unnamed",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -178163,6 +177517,7 @@
         "nickname": "FlashBear",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -179304,7 +178659,6 @@
         "nickname": "tORu",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -179312,7 +178666,7 @@
         ],
         "country": "pl",
         "country_name": "Poland",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "vps-569002f0.vps.ovh.net"
         ],
@@ -179579,7 +178933,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -180086,7 +179439,7 @@
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "this-is-a-tor-exit-node-hviv119.hviv.nl"
         ],
@@ -180120,6 +179473,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -180654,7 +180008,9 @@
         "nickname": "EsperpentoEspantoso",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -180959,7 +180315,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -181203,7 +180558,7 @@
     },
     {
       "thing": [
-        "[2a09:61c0::45]:443"
+        "[2a09:61c0::45]:1984"
       ],
       "type": "ip:port",
       "description": "Tor relay node (torexitams25).",
@@ -181417,6 +180772,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -181726,7 +181082,6 @@
         "nickname": "slarty2",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -182155,9 +181510,9 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -182272,8 +181627,6 @@
         "nickname": "Chapman",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -182281,7 +181634,7 @@
         ],
         "country": "lv",
         "country_name": "Latvia",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a02:27ac::3061"
       }
@@ -182802,43 +182155,6 @@
     },
     {
       "thing": [
-        "[2602:f915:7:c6e5::1]:443"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (Sophia12).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "Sophia12",
-        "flags": [
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "176.65.134.14.ptr.pfcloud.network"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2602:f915:7:c6e5::1"
-      }
-    },
-    {
-      "thing": [
         "[2401:c080:3000:3fbc:5400:6ff:fe90:5536]:22222"
       ],
       "type": "ip:port",
@@ -183288,7 +182604,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -183328,10 +182643,8 @@
         "nickname": "porthill",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -183491,6 +182804,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -183725,7 +183039,6 @@
         "nickname": "RelayGeek12",
         "flags": [
           "Fast",
-          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -183734,7 +183047,7 @@
         ],
         "country": "nz",
         "country_name": "New Zealand",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a06:9f80:a000::51:1"
       }
@@ -184351,9 +183664,7 @@
         "nickname": "letsdoitUS",
         "flags": [
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -184657,6 +183968,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -184732,7 +184044,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -185597,7 +184908,6 @@
         "nickname": "GermanCraft5",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -185685,7 +184995,7 @@
         "country_name": "Luxembourg",
         "running": false,
         "verified_host_names": [
-          "tor-exit-2.allium.observer"
+          "tor-exit-1.allium.observer"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2605:6400:30:f49b:e2ee:34f8:c854:6f63"
       }
@@ -186029,6 +185339,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -186036,7 +185347,7 @@
         ],
         "country": "fi",
         "country_name": "Finland",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "static.99.19.181.135.clients.your-server.de"
         ],
@@ -186186,7 +185497,6 @@
         "nickname": "nocabal",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -186386,6 +185696,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -186635,7 +185946,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "tor-exit-004.stormycloud.org"
         ],
@@ -187294,7 +186605,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -187452,7 +186762,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -187726,7 +187035,6 @@
         "nickname": "gangstaHetznDocker",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -187775,7 +187083,7 @@
         ],
         "country": "it",
         "country_name": "Italy",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "vps-6c927428.vps.ovh.net"
         ],
@@ -188644,9 +187952,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -188847,7 +188153,7 @@
         ],
         "country": "hu",
         "country_name": "Hungary",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a10:c800:1:6efd::1"
       }
@@ -188886,6 +188192,44 @@
         "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2605:6400:30:f753:891d:ee77:e97c:741a"
+      }
+    },
+    {
+      "thing": [
+        "[2a09:61c0::45]:443"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (torexitams25a).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "torexitams25a",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "nl",
+        "country_name": "Netherlands",
+        "running": true,
+        "verified_host_names": [
+          "ams25.torexit.nl"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a09:61c0::45"
       }
     },
     {
@@ -189194,7 +188538,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -189354,6 +188697,7 @@
       "meta": {
         "nickname": "AnonMiddleRelay",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -190826,7 +190170,6 @@
         "nickname": "LxcTorNode",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -190976,6 +190319,7 @@
         "nickname": "artikel5ev9b",
         "flags": [
           "Exit",
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -191600,6 +190944,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -191832,7 +191177,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -192109,7 +191453,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -192530,6 +191873,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -192805,7 +192149,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -192886,7 +192229,9 @@
         "nickname": "PresidentXi",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -193132,6 +192477,44 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:470:164:2::2"
+      }
+    },
+    {
+      "thing": [
+        "[2a09:61c0::46]:443"
+      ],
+      "type": "ip:port",
+      "description": "Tor relay node (torexitams26a).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "torexitams26a",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "nl",
+        "country_name": "Netherlands",
+        "running": true,
+        "verified_host_names": [
+          "ams26.torexit.nl"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/2a09:61c0::46"
       }
     },
     {
@@ -193593,7 +192976,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "gw3.themadhacker.net"
         ],
@@ -193790,6 +193173,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -194761,7 +194145,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -195262,7 +194645,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -195341,10 +194723,7 @@
         "nickname": "server18r1",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -195421,7 +194800,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -195577,10 +194955,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -195815,6 +195190,7 @@
         "nickname": "Unnamed",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -195855,7 +195231,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -196669,7 +196044,9 @@
         "nickname": "LaboringCat",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -196708,7 +196085,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -196940,7 +196316,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -197058,6 +196433,7 @@
         "nickname": "artikel5ev42",
         "flags": [
           "Exit",
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -197069,42 +196445,6 @@
           "this-is-a-tor-node---42.artikel5ev.de"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/2a03:4000:13:7c3:dead:beef:ca1f:1337"
-      }
-    },
-    {
-      "thing": [
-        "[2001:19f0:6400:23a2:5400:6ff:fec7:efc6]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (cloudpeak165).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "cloudpeak165",
-        "flags": [
-          "Exit",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "us",
-        "country_name": "United States of America",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2001:19f0:6400:23a2:5400:6ff:fec7:efc6"
       }
     },
     {
@@ -197480,7 +196820,6 @@
         "nickname": "mailus",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -197926,47 +197265,6 @@
     },
     {
       "thing": [
-        "[2a0b:f4c0:16c:2::1]:9000"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (F3Netze).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "F3Netze",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit-3.zbau.f3netze.de"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a0b:f4c0:16c:2::1"
-      }
-    },
-    {
-      "thing": [
         "[2a03:e600:100:c3::10]:9010"
       ],
       "type": "ip:port",
@@ -198029,7 +197327,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -198037,7 +197334,7 @@
         ],
         "country": "hu",
         "country_name": "Hungary",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2a01:270:9807::1"
       }
@@ -198184,7 +197481,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -198534,7 +197830,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "178-236-183-165.static.hvvc.us"
         ],
@@ -198685,6 +197981,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -198840,6 +198137,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -199815,7 +199113,7 @@
         ],
         "country": "tw",
         "country_name": "Taiwan",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "1-161-136-191.dynamic-ip.hinet.net"
         ],
@@ -199887,9 +199185,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -200085,6 +199381,7 @@
         "nickname": "AdlerSRG",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -200668,7 +199965,6 @@
         "nickname": "RelayKiritho",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -201181,10 +200477,7 @@
         "nickname": "undevfine",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -201416,10 +200709,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -201498,7 +200788,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "timeloop.moe"
         ],
@@ -201759,6 +201049,7 @@
         "nickname": "Sasaki",
         "flags": [
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -201798,6 +201089,7 @@
       "meta": {
         "nickname": "Unnamed",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -201835,7 +201127,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -202145,10 +201436,7 @@
         "nickname": "Killix",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -203307,7 +202595,7 @@
         ],
         "country": "fr",
         "country_name": "France",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "vps-c813df1a.vps.ovh.net"
         ],
@@ -203340,7 +202628,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -203418,6 +202708,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -203931,7 +203222,7 @@
         ],
         "country": "it",
         "country_name": "Italy",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "vps-594d48c6.vps.ovh.net"
         ],
@@ -204234,6 +203525,7 @@
       "meta": {
         "nickname": "uvava1006",
         "flags": [
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -204780,7 +204072,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -204859,6 +204150,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -204936,7 +204228,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -204985,41 +204276,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/2001:4801:7827:102:be76:4eff:fe10:12a5"
-      }
-    },
-    {
-      "thing": [
-        "[2a02:2479:35:c300::1]:9090"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (Cursed).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "Cursed",
-        "flags": [
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "de",
-        "country_name": "Germany",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a02:2479:35:c300::1"
       }
     },
     {
@@ -205084,7 +204340,6 @@
         "nickname": "tguard147235783413",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -205274,7 +204529,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -205282,7 +204536,7 @@
         ],
         "country": "ch",
         "country_name": "Switzerland",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "ov-b14823.infomaniak.ch"
         ],
@@ -205885,7 +205139,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -206127,7 +205380,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -206283,6 +205535,7 @@
       "meta": {
         "nickname": "masstorire",
         "flags": [
+          "Fast",
           "Running",
           "Stable",
           "V2Dir",
@@ -206458,42 +205711,6 @@
     },
     {
       "thing": [
-        "[2a14:1ec7:101a:f799::1]:9001"
-      ],
-      "type": "ip:port",
-      "description": "Tor relay node (FlashBull).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "FlashBull",
-        "flags": [
-          "Fast",
-          "Running",
-          "Stable",
-          "Valid"
-        ],
-        "country": "nl",
-        "country_name": "Netherlands",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/2a14:1ec7:101a:f799::1"
-      }
-    },
-    {
-      "thing": [
         "[2620:7:6003::116]:83"
       ],
       "type": "ip:port",
@@ -206559,7 +205776,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -207026,7 +206242,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -207673,6 +206888,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -207942,6 +207158,7 @@
         "flags": [
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -208404,7 +207621,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -208612,7 +207828,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "nobugz.eu"
         ],
@@ -209263,10 +208479,7 @@
         "nickname": "NTH152R1",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -209805,6 +209018,8 @@
         "nickname": "RelayGeek19",
         "flags": [
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -210115,6 +209330,7 @@
         "nickname": "sklep",
         "flags": [
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -210574,6 +209790,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -210808,7 +210025,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -211387,6 +210603,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -211788,7 +211005,7 @@
         ],
         "country": "us",
         "country_name": "United States of America",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "tor-exit-005.stormycloud.org"
         ],
@@ -211862,10 +211079,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -212134,6 +211348,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -212377,7 +211592,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -212649,6 +211863,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -212919,7 +212134,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -213382,6 +212596,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -213421,7 +212636,6 @@
         "nickname": "Fortune",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -213532,7 +212746,6 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -213810,7 +213023,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -213921,7 +213133,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -213961,7 +213172,6 @@
         "nickname": "helmsdeepNO",
         "flags": [
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -213969,7 +213179,7 @@
         ],
         "country": "no",
         "country_name": "Norway",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "148-252-101.130.3p.ntebredband.no"
         ],
@@ -214042,6 +213252,7 @@
         "nickname": "artikel5ev9",
         "flags": [
           "Exit",
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -214754,7 +213965,6 @@
           "Guard",
           "Running",
           "Stable",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -214868,7 +214078,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -214945,7 +214154,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -215296,7 +214504,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -215532,7 +214739,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -215613,7 +214819,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -215692,10 +214897,7 @@
         "nickname": "dezember",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -215733,10 +214935,7 @@
         "nickname": "prsv",
         "flags": [
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -216288,7 +215487,6 @@
         "flags": [
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -217263,7 +216461,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -217422,6 +216619,7 @@
         "flags": [
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
