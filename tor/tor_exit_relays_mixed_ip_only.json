@@ -1,6 +1,6 @@
 {
   "name": "Tor Exit Relays Mixed IP-Only",
-  "last_updated": "2026-11-04T12:49:57.608742",
+  "last_updated": "2026-11-05T12:58:25.415857",
   "original_project": "https://onionoo.torproject.org/details",
   "changes": "Fetched Onionoo relay feed and converted to standardized format.",
   "things": [
@@ -347,7 +347,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -777,6 +779,8 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -1211,6 +1215,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -1526,6 +1531,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -1566,6 +1572,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -1997,6 +2004,8 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -2124,7 +2133,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -2360,6 +2369,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -2569,6 +2579,42 @@
           "berlin01.tor-exit.artikel10.org"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/artikel10ber57"
+      }
+    },
+    {
+      "thing": [
+        "205.185.113.210",
+        "2605:6400:20:3b6:2605:6400:20:3b6"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (2mplas3).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "2mplas3",
+        "flags": [
+          "Exit",
+          "Running",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": false,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2mplas3"
       }
     },
     {
@@ -3391,8 +3437,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -3400,7 +3444,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -3869,7 +3913,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -4021,7 +4065,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -4192,6 +4235,44 @@
           "tor29.quintex.com"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/Quintex329"
+      }
+    },
+    {
+      "thing": [
+        "198.98.51.249",
+        "2605:6400:10:1ab:2605:6400:10:1ab"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (2mpe).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "2mpe",
+        "flags": [
+          "BadExit",
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2mpe"
       }
     },
     {
@@ -5011,6 +5092,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -5967,7 +6049,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -6115,6 +6197,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -6546,8 +6629,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -6555,7 +6636,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -6756,8 +6837,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -6765,7 +6844,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -6874,6 +6953,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -7947,6 +8027,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -8667,6 +8748,7 @@
           "HSDir",
           "Running",
           "Stable",
+          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -8704,6 +8786,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -9109,8 +9192,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -9118,7 +9199,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -9268,7 +9349,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -9346,7 +9426,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -9744,6 +9823,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -10138,8 +10218,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -10147,7 +10225,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -10784,7 +10862,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI143"
       }
@@ -10855,6 +10933,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -11289,6 +11368,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -11650,7 +11730,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -11690,7 +11770,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI154"
       }
@@ -11837,6 +11917,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -12593,6 +12674,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -12790,6 +12872,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -13419,6 +13502,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -14009,6 +14093,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -14127,6 +14212,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -14336,6 +14422,43 @@
     },
     {
       "thing": [
+        "192.3.47.172",
+        "2605:6f01:2000:10b::50c3:ff1"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (Quetzalcoatl).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "Quetzalcoatl",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/Quetzalcoatl"
+      }
+    },
+    {
+      "thing": [
         "5.2.69.84",
         "2a04:52c0:2000:501::84"
       ],
@@ -14525,6 +14648,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -15824,6 +15948,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -15947,6 +16072,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -17110,6 +17236,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -17148,6 +17275,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -17509,8 +17637,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -17518,7 +17644,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -17592,7 +17718,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -17950,7 +18078,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI145"
       }
@@ -18142,6 +18270,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -18824,8 +18953,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -18833,7 +18960,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -18842,8 +18969,7 @@
     },
     {
       "thing": [
-        "198.58.107.53",
-        "2600:3c00::f03c:91ff:fe73:f9ba"
+        "198.58.107.53"
       ],
       "type": "ip-only",
       "description": "Tor relay node (intothetylerzone).",
@@ -18866,6 +18992,8 @@
         "nickname": "intothetylerzone",
         "flags": [
           "Exit",
+          "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -18877,7 +19005,7 @@
         "verified_host_names": [
           "tor.tyler.zone"
         ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/intothetylerzone"
+        "external_url": "https://metrics.torproject.org/rs.html#search/198.58.107.53"
       }
     },
     {
@@ -19620,9 +19748,7 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -19976,7 +20102,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -20383,6 +20508,44 @@
           "tor-exit-anonymizer.appliedprivacy.net"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/breitwegerich"
+      }
+    },
+    {
+      "thing": [
+        "150.40.117.43"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (anemia).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "anemia",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "nl",
+        "country_name": "Netherlands",
+        "running": true,
+        "verified_host_names": [
+          "tor-exit.nl8.2cb.li"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/150.40.117.43"
       }
     },
     {
@@ -21493,7 +21656,7 @@
         ],
         "country": "is",
         "country_name": "Iceland",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit.onion.fail"
         ],
@@ -21799,6 +21962,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -22245,7 +22409,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "berlin01.tor-exit.artikel10.org"
         ],
@@ -22918,6 +23082,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -23483,6 +23648,8 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -23924,6 +24091,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -24242,6 +24410,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -24281,6 +24450,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -24844,8 +25014,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -24853,7 +25021,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -24966,7 +25134,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -25087,6 +25258,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -25166,15 +25338,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -25249,6 +25419,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -25370,7 +25541,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -25452,6 +25622,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -26045,6 +26216,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -27143,8 +27315,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -27152,7 +27322,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -27264,6 +27434,8 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -27542,6 +27714,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -27944,7 +28117,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -28294,6 +28467,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -28653,9 +28827,7 @@
         "country": "nl",
         "country_name": "Netherlands",
         "running": false,
-        "verified_host_names": [
-          "v1131125.hosted-by-vdsina.com"
-        ],
+        "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/144.124.234.199"
       }
     },
@@ -28979,44 +29151,6 @@
     },
     {
       "thing": [
-        "118.67.196.83",
-        "2407:8b00:116d:e800::20"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (Sheeeeeeep).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "Sheeeeeeep",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "nz",
-        "country_name": "New Zealand",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/Sheeeeeeep"
-      }
-    },
-    {
-      "thing": [
         "192.42.116.95",
         "2001:67c:e60:c0c:192:42:116:95"
       ],
@@ -29161,6 +29295,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -29546,7 +29681,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -29866,7 +30003,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -29874,7 +30010,7 @@
         ],
         "country": "cz",
         "country_name": "Czechia",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/46.167.244.241"
       }
@@ -29988,6 +30124,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -30155,7 +30292,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -30356,7 +30493,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI152"
       }
@@ -31412,6 +31549,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -31529,6 +31667,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -31568,16 +31707,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -31884,15 +32020,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -31927,6 +32061,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -32561,7 +32696,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -32884,7 +33022,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "berlin01.tor-exit.artikel10.org"
         ],
@@ -33085,6 +33223,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -33606,6 +33745,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -33646,6 +33786,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -34645,7 +34786,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -34685,7 +34829,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -35236,7 +35379,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -35514,6 +35659,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -35949,6 +36095,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -36065,6 +36212,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -36468,16 +36616,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -36718,7 +36863,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -36752,7 +36897,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -36804,44 +36951,6 @@
           "tor-exit-96.digitalcourage.de"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/Digitalcourage4ipaa"
-      }
-    },
-    {
-      "thing": [
-        "198.98.60.90"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (samictor).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "samictor",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Running",
-          "Valid"
-        ],
-        "country": "us",
-        "country_name": "United States of America",
-        "running": false,
-        "verified_host_names": [
-          "tor.samic.org"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/198.98.60.90"
       }
     },
     {
@@ -37750,7 +37859,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -38070,8 +38178,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -38079,7 +38185,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -38155,8 +38261,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -38164,7 +38268,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -38363,7 +38467,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI156"
       }
@@ -38923,6 +39027,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -39557,8 +39662,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -39566,7 +39669,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -39687,7 +39790,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -39920,8 +40023,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -39929,7 +40030,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -40831,7 +40932,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -40870,6 +40974,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -41858,6 +41963,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -42023,6 +42129,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -43377,6 +43484,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -44102,7 +44210,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI147"
       }
@@ -44183,6 +44291,42 @@
           "tor-exit-anonymizer.appliedprivacy.net"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/kaeferbohne"
+      }
+    },
+    {
+      "thing": [
+        "205.185.113.210",
+        "2605:6400:20:3b6:2605:6400:20:3b6"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (2mplas2).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "2mplas2",
+        "flags": [
+          "Exit",
+          "Running",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": false,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2mplas2"
       }
     },
     {
@@ -45015,6 +45159,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -45688,8 +45833,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -45697,7 +45840,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -45925,13 +46068,14 @@
         "nickname": "flokiTor",
         "flags": [
           "Exit",
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
         ],
         "country": "ro",
         "country_name": "Romania",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/185.100.87.24"
       }
@@ -47079,6 +47223,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -47212,44 +47357,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/NTH118R2"
-      }
-    },
-    {
-      "thing": [
-        "213.210.4.3",
-        "2a12:bec0:162:48a::"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (taiwan).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "taiwan",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Running",
-          "StaleDesc",
-          "Valid"
-        ],
-        "country": "tw",
-        "country_name": "Taiwan",
-        "running": false,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/taiwan"
       }
     },
     {
@@ -47606,44 +47713,6 @@
           "tor16.quintex.com"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/Quintex516"
-      }
-    },
-    {
-      "thing": [
-        "81.90.116.201"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (oldInJoke).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "oldInJoke",
-        "flags": [
-          "Exit",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "ee",
-        "country_name": "Estonia",
-        "running": false,
-        "verified_host_names": [
-          "81-90-116-201.ip.elisa.ee"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/81.90.116.201"
       }
     },
     {
@@ -48728,7 +48797,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "berlin01.tor-exit.artikel10.org"
         ],
@@ -48802,8 +48871,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -48811,7 +48878,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -49489,7 +49556,7 @@
         ],
         "country": "id",
         "country_name": "Indonesia",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/103.146.203.11"
       }
@@ -49561,7 +49628,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -49605,7 +49674,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -49962,12 +50031,13 @@
         "nickname": "lillen",
         "flags": [
           "Exit",
+          "Fast",
           "Running",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "81-232-160-94-no600.tbcn.telia.com"
         ],
@@ -50316,6 +50386,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -50830,7 +50901,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI155"
       }
@@ -51816,15 +51887,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -51864,7 +51933,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -52216,6 +52285,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -52261,7 +52331,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "berlin01.tor-exit.artikel10.org"
         ],
@@ -52295,8 +52365,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -52304,7 +52372,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -52338,15 +52406,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -52427,7 +52493,9 @@
         "country": "nl",
         "country_name": "Netherlands",
         "running": true,
-        "verified_host_names": null,
+        "verified_host_names": [
+          "tor-exit-node.https.cl"
+        ],
         "external_url": "https://metrics.torproject.org/rs.html#search/HTTPSCL"
       }
     },
@@ -53059,7 +53127,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -53221,6 +53291,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -54466,7 +54537,6 @@
         "flags": [
           "Exit",
           "Running",
-          "StaleDesc",
           "V2Dir",
           "Valid"
         ],
@@ -55546,6 +55616,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -55670,6 +55741,8 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -55751,6 +55824,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -55796,7 +55870,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -56191,7 +56265,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI141"
       }
@@ -56393,7 +56467,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI142"
       }
@@ -56658,7 +56732,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -56971,6 +57047,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -57484,6 +57561,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -57778,7 +57856,7 @@
     },
     {
       "thing": [
-        "198.167.206.146"
+        "198.167.206.187"
       ],
       "type": "ip-only",
       "description": "Tor relay node (europeantgah).",
@@ -57809,9 +57887,9 @@
         "country_name": "Sweden",
         "running": true,
         "verified_host_names": [
-          "c6a7ce92.vpn.njalla.net"
+          "c6a7cebb.vpn.njalla.net"
         ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/198.167.206.146"
+        "external_url": "https://metrics.torproject.org/rs.html#search/198.167.206.187"
       }
     },
     {
@@ -58198,7 +58276,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -58436,7 +58516,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -58548,6 +58628,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -58949,6 +59030,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -59150,6 +59232,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -59266,6 +59349,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -59542,7 +59626,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -59977,6 +60064,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -60135,6 +60223,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -60296,6 +60385,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "ro",
@@ -61812,6 +61902,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -62286,6 +62377,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "ro",
@@ -62442,7 +62534,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -62520,7 +62614,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -62528,7 +62621,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -63712,7 +63805,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -63872,6 +63967,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -64554,6 +64650,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -65810,48 +65907,6 @@
     },
     {
       "thing": [
-        "94.142.241.194",
-        "2a02:898:169::2"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (VrijHeid4).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "VrijHeid4",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "nl",
-        "country_name": "Netherlands",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit.vrij-heid.nl"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/VrijHeid4"
-      }
-    },
-    {
-      "thing": [
         "192.42.116.62",
         "2001:67c:e60:c0c:192:42:116:62"
       ],
@@ -66073,6 +66128,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -66113,6 +66169,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -66663,6 +66720,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -66861,6 +66919,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -67066,7 +67125,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -67384,14 +67443,12 @@
         "nickname": "golosa",
         "flags": [
           "Exit",
-          "Fast",
           "Running",
-          "Stable",
           "Valid"
         ],
         "country": "gb",
         "country_name": "United Kingdom of Great Britain and Northern Ireland",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "golosa.info"
         ],
@@ -67623,6 +67680,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -67701,6 +67759,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -67817,6 +67876,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -68068,46 +68128,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/103.91.65.44"
-      }
-    },
-    {
-      "thing": [
-        "15.235.9.234",
-        "2607:5300:203:97ea::3"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (NTH92R).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "NTH92R",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "ca",
-        "country_name": "Canada",
-        "running": false,
-        "verified_host_names": [
-          "proxmoxovh.iia.cl"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/NTH92R"
       }
     },
     {
@@ -68890,16 +68910,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -69412,6 +69429,8 @@
         "nickname": "vol1",
         "flags": [
           "Exit",
+          "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -69532,6 +69551,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -69650,6 +69670,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "ro",
@@ -69688,15 +69709,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -70009,8 +70028,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -70018,7 +70035,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -70179,6 +70196,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -71091,6 +71109,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "us",
@@ -71687,7 +71706,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -72515,8 +72536,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -72524,7 +72543,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -72796,7 +72815,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -73112,6 +73133,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -73304,6 +73326,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -73548,7 +73571,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI153"
       }
@@ -73860,7 +73883,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -74137,6 +74163,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -74179,6 +74206,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -75101,6 +75129,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "us",
@@ -75219,6 +75248,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -75264,7 +75294,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/MarieAlex"
       }
@@ -75422,7 +75452,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -76087,6 +76117,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -77039,6 +77070,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -77250,43 +77282,6 @@
           "tor72.quintex.com"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/Quintex472"
-      }
-    },
-    {
-      "thing": [
-        "188.137.153.121",
-        "2a12:bec4:19a4:e92::"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (same82).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "same82",
-        "flags": [
-          "Exit",
-          "Running",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "at",
-        "country_name": "Austria",
-        "running": true,
-        "verified_host_names": null,
-        "external_url": "https://metrics.torproject.org/rs.html#search/same82"
       }
     },
     {
@@ -77878,6 +77873,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -78011,49 +78007,6 @@
     },
     {
       "thing": [
-        "185.132.53.121",
-        "2a14:c380:50:4e::b"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (dismal).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "dismal",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "HSDir",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "nl",
-        "country_name": "Netherlands",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit.nl.2cb.li"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/dismal"
-      }
-    },
-    {
-      "thing": [
         "23.191.200.71",
         "2602:f7d8:0:1337::71"
       ],
@@ -78155,8 +78108,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -78164,7 +78115,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -78239,6 +78190,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "ro",
@@ -78477,8 +78429,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -78486,7 +78436,7 @@
         ],
         "country": "is",
         "country_name": "Iceland",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-arcticfrost.crabdance.com"
         ],
@@ -78929,7 +78879,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI150"
       }
@@ -78960,6 +78910,7 @@
         "nickname": "Quetzalcoatl",
         "flags": [
           "Exit",
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -79401,6 +79352,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -79920,6 +79872,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "ro",
@@ -80117,6 +80070,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -80478,7 +80432,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -80552,6 +80506,8 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -80876,7 +80832,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI151"
       }
@@ -81618,6 +81574,7 @@
         "nickname": "pinetree",
         "flags": [
           "Exit",
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -81742,7 +81699,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI146"
       }
@@ -81979,7 +81936,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -82377,7 +82334,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -82455,7 +82412,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -83482,6 +83439,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -83972,6 +83930,42 @@
     },
     {
       "thing": [
+        "141.11.139.101",
+        "2a12:bec0:164:1027::"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (japan).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "japan",
+        "flags": [
+          "Exit",
+          "Running",
+          "Valid"
+        ],
+        "country": "jp",
+        "country_name": "Japan",
+        "running": false,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/japan"
+      }
+    },
+    {
+      "thing": [
         "109.70.100.11",
         "2a03:e600:100::11"
       ],
@@ -84158,7 +84152,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -84471,6 +84464,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -84872,8 +84866,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -84881,7 +84873,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -85236,49 +85228,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/UnredactedAguirre"
-      }
-    },
-    {
-      "thing": [
-        "94.142.244.16",
-        "2a02:898:169::1"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (VrijHeid).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "VrijHeid",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "HSDir",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "nl",
-        "country_name": "Netherlands",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit.vrij-heid.nl"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/VrijHeid"
       }
     },
     {
@@ -85655,16 +85604,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -87296,7 +87242,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "berlin01.tor-exit.artikel10.org"
         ],
@@ -87490,7 +87436,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -87525,6 +87471,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -87769,6 +87716,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -88045,7 +87993,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -88238,6 +88186,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -88790,7 +88739,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -89471,8 +89422,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -89480,7 +89429,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -89596,6 +89545,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -89676,7 +89626,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -90157,6 +90106,43 @@
           "dhcp-141-239-158-222.hawaiiantel.net"
         ],
         "external_url": "https://metrics.torproject.org/rs.html#search/141.239.158.222"
+      }
+    },
+    {
+      "thing": [
+        "205.185.113.210",
+        "2605:6400:20:3b6:2605:6400:20:3b6"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (2mplas).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "2mplas",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": null,
+        "external_url": "https://metrics.torproject.org/rs.html#search/2mplas"
       }
     },
     {
@@ -90701,6 +90687,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -90743,6 +90730,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -91019,6 +91007,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -91181,6 +91170,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -91344,7 +91334,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -92070,7 +92060,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -92103,6 +92093,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -92188,7 +92179,7 @@
         ],
         "country": "lu",
         "country_name": "Luxembourg",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit.sylu.net"
         ],
@@ -92579,8 +92570,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -92588,7 +92577,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -92700,8 +92689,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -92709,7 +92696,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -92953,7 +92940,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI148"
       }
@@ -94301,15 +94288,14 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "nl",
         "country_name": "Netherlands",
-        "running": true,
-        "verified_host_names": [
-          "v1131125.hosted-by-vdsina.com"
-        ],
+        "running": false,
+        "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/144.124.234.199"
       }
     },
@@ -94832,6 +94818,44 @@
     },
     {
       "thing": [
+        "157.131.34.164"
+      ],
+      "type": "ip-only",
+      "description": "Tor relay node (ARFExit1).",
+      "references": [
+        "https://onionoo.torproject.org/details"
+      ],
+      "mitre": [
+        {
+          "tactic": "Command and Control",
+          "techniques": [
+            "T1090",
+            "T1090.003"
+          ]
+        }
+      ],
+      "tags": [
+        "tor"
+      ],
+      "meta": {
+        "nickname": "ARFExit1",
+        "flags": [
+          "Exit",
+          "Running",
+          "V2Dir",
+          "Valid"
+        ],
+        "country": "us",
+        "country_name": "United States of America",
+        "running": true,
+        "verified_host_names": [
+          "157-131-34-164.fiber.dynamic.sonic.net"
+        ],
+        "external_url": "https://metrics.torproject.org/rs.html#search/157.131.34.164"
+      }
+    },
+    {
+      "thing": [
         "204.8.96.81",
         "2620:7:6003::ffff:c759:e651"
       ],
@@ -95298,6 +95322,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "au",
@@ -95375,6 +95400,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -95531,7 +95557,10 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -95568,6 +95597,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -95646,6 +95676,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "us",
@@ -96153,7 +96184,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -96863,7 +96896,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -97272,7 +97307,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI144"
       }
@@ -97304,8 +97339,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -97313,7 +97346,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -97353,7 +97386,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -98377,7 +98410,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -99205,15 +99238,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -99417,49 +99448,6 @@
     },
     {
       "thing": [
-        "94.142.244.16",
-        "2a02:898:169::1"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (VrijHeid2).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "VrijHeid2",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "HSDir",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "nl",
-        "country_name": "Netherlands",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit.vrij-heid.nl"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/VrijHeid2"
-      }
-    },
-    {
-      "thing": [
         "192.42.116.117",
         "2001:67c:e60:c0c:192:42:116:117"
       ],
@@ -99607,7 +99595,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -99880,6 +99868,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -99957,6 +99946,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -100360,6 +100350,8 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -100399,15 +100391,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -100520,6 +100510,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -100600,6 +100591,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -100759,6 +100751,8 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -101073,6 +101067,7 @@
         "nickname": "finger67tor",
         "flags": [
           "Exit",
+          "Fast",
           "Running",
           "V2Dir",
           "Valid"
@@ -101154,6 +101149,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -101349,8 +101345,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -101358,7 +101352,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -102546,6 +102540,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -102751,6 +102746,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -103272,7 +103268,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "berlin01.tor-exit.artikel10.org"
         ],
@@ -103389,7 +103385,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -104184,7 +104182,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -104457,6 +104455,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -104494,7 +104493,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -105051,7 +105052,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -105480,16 +105481,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -105755,6 +105753,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -105835,7 +105834,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -107180,7 +107178,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -107542,7 +107539,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -107660,6 +107659,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -107905,7 +107905,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -108062,6 +108062,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "Running",
           "Stable",
           "V2Dir",
@@ -108310,7 +108311,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/DFRI149"
       }
@@ -108654,8 +108655,6 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -108663,7 +108662,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -108773,6 +108772,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -110194,6 +110194,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -111032,7 +111033,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -111387,7 +111388,6 @@
           "Exit",
           "Fast",
           "Guard",
-          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -111427,15 +111427,13 @@
         "flags": [
           "Exit",
           "Fast",
-          "Guard",
           "Running",
-          "Stable",
           "V2Dir",
           "Valid"
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -111515,7 +111513,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "berlin01.tor-exit.artikel10.org"
         ],
@@ -111980,6 +111978,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -112621,6 +112620,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -112857,6 +112857,8 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -113132,7 +113134,9 @@
         "flags": [
           "Exit",
           "Fast",
+          "HSDir",
           "Running",
+          "Stable",
           "V2Dir",
           "Valid"
         ],
@@ -113371,6 +113375,7 @@
           "Exit",
           "Fast",
           "Running",
+          "Stable",
           "Valid"
         ],
         "country": "us",
@@ -113576,7 +113581,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -113731,6 +113736,7 @@
         "flags": [
           "Exit",
           "Fast",
+          "Guard",
           "HSDir",
           "Running",
           "Stable",
@@ -113779,7 +113785,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -114098,6 +114104,7 @@
           "Exit",
           "Fast",
           "Guard",
+          "HSDir",
           "Running",
           "Stable",
           "V2Dir",
@@ -114143,7 +114150,7 @@
         ],
         "country": "se",
         "country_name": "Sweden",
-        "running": false,
+        "running": true,
         "verified_host_names": [
           "tor-exit-read-me.dfri.se"
         ],
@@ -114188,49 +114195,6 @@
         "running": true,
         "verified_host_names": null,
         "external_url": "https://metrics.torproject.org/rs.html#search/77.48.28.237"
-      }
-    },
-    {
-      "thing": [
-        "94.142.241.194",
-        "2a02:898:169::2"
-      ],
-      "type": "ip-only",
-      "description": "Tor relay node (VrijHeid3).",
-      "references": [
-        "https://onionoo.torproject.org/details"
-      ],
-      "mitre": [
-        {
-          "tactic": "Command and Control",
-          "techniques": [
-            "T1090",
-            "T1090.003"
-          ]
-        }
-      ],
-      "tags": [
-        "tor"
-      ],
-      "meta": {
-        "nickname": "VrijHeid3",
-        "flags": [
-          "Exit",
-          "Fast",
-          "Guard",
-          "HSDir",
-          "Running",
-          "Stable",
-          "V2Dir",
-          "Valid"
-        ],
-        "country": "nl",
-        "country_name": "Netherlands",
-        "running": false,
-        "verified_host_names": [
-          "tor-exit.vrij-heid.nl"
-        ],
-        "external_url": "https://metrics.torproject.org/rs.html#search/VrijHeid3"
       }
     },
     {
@@ -114827,7 +114791,7 @@
         ],
         "country": "de",
         "country_name": "Germany",
-        "running": true,
+        "running": false,
         "verified_host_names": [
           "berlin01.tor-exit.artikel10.org"
         ],
